@@ -21,7 +21,7 @@ ul{padding-left:1.2em}li{margin-bottom:6px}
 hr{border:none;border-top:1px solid var(--border);margin:1.5em 0}
 a{color:var(--link)}
 input[name="kage"],input[name^="kday"],input[name^="kb"],input[name^="ks"],input[name^="kaf"]{display:none}
-.sortseg{display:flex;gap:6px;align-items:center;margin-left:auto;padding-left:10px;border-left:1px solid var(--border);flex:0 0 auto}
+.sortrow{display:flex;gap:6px;align-items:center;margin:0 0 8px}
 .afilter{display:flex;gap:6px;align-items:center;margin:0 0 8px}
 .panes ul.evl,.panes ul.evd{display:none}
 .tabbar{position:sticky;top:0;background:var(--bg);padding:10px 0 8px;display:flex;gap:6px;overflow-x:auto;z-index:5;border-bottom:1px solid var(--border);margin-bottom:4px}
@@ -163,99 +163,99 @@ input[name="kage"],input[name^="kday"],input[name^="kb"],input[name^="ks"],input
 #kb0d00:checked ~ .subbar label[for="kb0d00"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb0d01:checked ~ .subbar label[for="kb0d01"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb0d02:checked ~ .subbar label[for="kb0d02"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks0d0e:checked ~ .subbar label[for="ks0d0e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks0d0l:checked ~ .subbar label[for="ks0d0l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks0d0n:checked ~ .subbar label[for="ks0d0n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks0d0e:checked ~ .sortrow label[for="ks0d0e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks0d0l:checked ~ .sortrow label[for="ks0d0l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks0d0n:checked ~ .sortrow label[for="ks0d0n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kday0d0:checked ~ .subbar label[for="kday0d0"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kday0d1:checked ~ .subbar label[for="kday0d1"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb0d20:checked ~ .subbar label[for="kb0d20"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb0d21:checked ~ .subbar label[for="kb0d21"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb0d22:checked ~ .subbar label[for="kb0d22"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb0d23:checked ~ .subbar label[for="kb0d23"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks0d2e:checked ~ .subbar label[for="ks0d2e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks0d2l:checked ~ .subbar label[for="ks0d2l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks0d2n:checked ~ .subbar label[for="ks0d2n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks0d2e:checked ~ .sortrow label[for="ks0d2e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks0d2l:checked ~ .sortrow label[for="ks0d2l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks0d2n:checked ~ .sortrow label[for="ks0d2n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kday0d2:checked ~ .subbar label[for="kday0d2"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb0d30:checked ~ .subbar label[for="kb0d30"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb0d31:checked ~ .subbar label[for="kb0d31"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb0d32:checked ~ .subbar label[for="kb0d32"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks0d3e:checked ~ .subbar label[for="ks0d3e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks0d3l:checked ~ .subbar label[for="ks0d3l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks0d3n:checked ~ .subbar label[for="ks0d3n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks0d3e:checked ~ .sortrow label[for="ks0d3e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks0d3l:checked ~ .sortrow label[for="ks0d3l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks0d3n:checked ~ .sortrow label[for="ks0d3n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kday0d3:checked ~ .subbar label[for="kday0d3"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb0d40:checked ~ .subbar label[for="kb0d40"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb0d41:checked ~ .subbar label[for="kb0d41"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb0d42:checked ~ .subbar label[for="kb0d42"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks0d4e:checked ~ .subbar label[for="ks0d4e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks0d4l:checked ~ .subbar label[for="ks0d4l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks0d4n:checked ~ .subbar label[for="ks0d4n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks0d4e:checked ~ .sortrow label[for="ks0d4e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks0d4l:checked ~ .sortrow label[for="ks0d4l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks0d4n:checked ~ .sortrow label[for="ks0d4n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kday0d4:checked ~ .subbar label[for="kday0d4"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb0d50:checked ~ .subbar label[for="kb0d50"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb0d51:checked ~ .subbar label[for="kb0d51"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb0d52:checked ~ .subbar label[for="kb0d52"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks0d5e:checked ~ .subbar label[for="ks0d5e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks0d5l:checked ~ .subbar label[for="ks0d5l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks0d5n:checked ~ .subbar label[for="ks0d5n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks0d5e:checked ~ .sortrow label[for="ks0d5e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks0d5l:checked ~ .sortrow label[for="ks0d5l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks0d5n:checked ~ .sortrow label[for="ks0d5n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kday0d5:checked ~ .subbar label[for="kday0d5"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb0d60:checked ~ .subbar label[for="kb0d60"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb0d61:checked ~ .subbar label[for="kb0d61"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb0d62:checked ~ .subbar label[for="kb0d62"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks0d6e:checked ~ .subbar label[for="ks0d6e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks0d6l:checked ~ .subbar label[for="ks0d6l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks0d6n:checked ~ .subbar label[for="ks0d6n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks0d6e:checked ~ .sortrow label[for="ks0d6e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks0d6l:checked ~ .sortrow label[for="ks0d6l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks0d6n:checked ~ .sortrow label[for="ks0d6n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kday0d6:checked ~ .subbar label[for="kday0d6"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kaf0a:checked ~ .afilter label[for="kaf0a"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kaf0u:checked ~ .afilter label[for="kaf0u"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kaf06:checked ~ .afilter label[for="kaf06"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb1d00:checked ~ .subbar label[for="kb1d00"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb1d01:checked ~ .subbar label[for="kb1d01"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks1d0e:checked ~ .subbar label[for="ks1d0e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks1d0l:checked ~ .subbar label[for="ks1d0l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks1d0n:checked ~ .subbar label[for="ks1d0n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks1d0e:checked ~ .sortrow label[for="ks1d0e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks1d0l:checked ~ .sortrow label[for="ks1d0l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks1d0n:checked ~ .sortrow label[for="ks1d0n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kday1d0:checked ~ .subbar label[for="kday1d0"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb1d10:checked ~ .subbar label[for="kb1d10"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb1d11:checked ~ .subbar label[for="kb1d11"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks1d1e:checked ~ .subbar label[for="ks1d1e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks1d1l:checked ~ .subbar label[for="ks1d1l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks1d1n:checked ~ .subbar label[for="ks1d1n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks1d1e:checked ~ .sortrow label[for="ks1d1e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks1d1l:checked ~ .sortrow label[for="ks1d1l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks1d1n:checked ~ .sortrow label[for="ks1d1n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kday1d1:checked ~ .subbar label[for="kday1d1"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb1d20:checked ~ .subbar label[for="kb1d20"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks1d2e:checked ~ .subbar label[for="ks1d2e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks1d2l:checked ~ .subbar label[for="ks1d2l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks1d2n:checked ~ .subbar label[for="ks1d2n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks1d2e:checked ~ .sortrow label[for="ks1d2e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks1d2l:checked ~ .sortrow label[for="ks1d2l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks1d2n:checked ~ .sortrow label[for="ks1d2n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kday1d2:checked ~ .subbar label[for="kday1d2"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb1d30:checked ~ .subbar label[for="kb1d30"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks1d3e:checked ~ .subbar label[for="ks1d3e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks1d3l:checked ~ .subbar label[for="ks1d3l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks1d3n:checked ~ .subbar label[for="ks1d3n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks1d3e:checked ~ .sortrow label[for="ks1d3e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks1d3l:checked ~ .sortrow label[for="ks1d3l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks1d3n:checked ~ .sortrow label[for="ks1d3n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kday1d3:checked ~ .subbar label[for="kday1d3"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb1d40:checked ~ .subbar label[for="kb1d40"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks1d4e:checked ~ .subbar label[for="ks1d4e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks1d4l:checked ~ .subbar label[for="ks1d4l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks1d4n:checked ~ .subbar label[for="ks1d4n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks1d4e:checked ~ .sortrow label[for="ks1d4e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks1d4l:checked ~ .sortrow label[for="ks1d4l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks1d4n:checked ~ .sortrow label[for="ks1d4n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kday1d4:checked ~ .subbar label[for="kday1d4"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb1d50:checked ~ .subbar label[for="kb1d50"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks1d5e:checked ~ .subbar label[for="ks1d5e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks1d5l:checked ~ .subbar label[for="ks1d5l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks1d5n:checked ~ .subbar label[for="ks1d5n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks1d5e:checked ~ .sortrow label[for="ks1d5e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks1d5l:checked ~ .sortrow label[for="ks1d5l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks1d5n:checked ~ .sortrow label[for="ks1d5n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kday1d5:checked ~ .subbar label[for="kday1d5"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb1d60:checked ~ .subbar label[for="kb1d60"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks1d6e:checked ~ .subbar label[for="ks1d6e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks1d6l:checked ~ .subbar label[for="ks1d6l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks1d6n:checked ~ .subbar label[for="ks1d6n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks1d6e:checked ~ .sortrow label[for="ks1d6e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks1d6l:checked ~ .sortrow label[for="ks1d6l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks1d6n:checked ~ .sortrow label[for="ks1d6n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kday1d6:checked ~ .subbar label[for="kday1d6"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kaf1a:checked ~ .afilter label[for="kaf1a"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kaf1u:checked ~ .afilter label[for="kaf1u"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kaf16:checked ~ .afilter label[for="kaf16"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb2d00:checked ~ .subbar label[for="kb2d00"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks2d0e:checked ~ .subbar label[for="ks2d0e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks2d0l:checked ~ .subbar label[for="ks2d0l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks2d0n:checked ~ .subbar label[for="ks2d0n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks2d0e:checked ~ .sortrow label[for="ks2d0e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks2d0l:checked ~ .sortrow label[for="ks2d0l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks2d0n:checked ~ .sortrow label[for="ks2d0n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kday2d0:checked ~ .subbar label[for="kday2d0"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb2d10:checked ~ .subbar label[for="kb2d10"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks2d1e:checked ~ .subbar label[for="ks2d1e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks2d1l:checked ~ .subbar label[for="ks2d1l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks2d1n:checked ~ .subbar label[for="ks2d1n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks2d1e:checked ~ .sortrow label[for="ks2d1e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks2d1l:checked ~ .sortrow label[for="ks2d1l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks2d1n:checked ~ .sortrow label[for="ks2d1n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kday2d1:checked ~ .subbar label[for="kday2d1"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kday2d2:checked ~ .subbar label[for="kday2d2"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 
@@ -313,11 +313,11 @@ details.about ul{margin:.4em 0}
 <input type="radio" name="kb0d0" id="kb0d00" checked>
 <input type="radio" name="kb0d0" id="kb0d01">
 <input type="radio" name="kb0d0" id="kb0d02">
+<div class="sortrow"><label class="tlab slab" for="ks0d0e">Earliest</label><label class="tlab slab" for="ks0d0l">Latest</label><label class="tlab slab" for="ks0d0n">Nearest</label></div>
 <div class="subbar">
 <label class="tlab" for="kb0d00">Morning</label>
 <label class="tlab" for="kb0d01">Afternoon</label>
 <label class="tlab" for="kb0d02">Notes</label>
-<span class="sortseg"><label class="tlab slab" for="ks0d0e">Earliest</label><label class="tlab slab" for="ks0d0l">Latest</label><label class="tlab slab" for="ks0d0n">Nearest</label></span>
 </div>
 <div class="panes">
 <section class="pane p0kb0d0"><ul class="evt">
@@ -375,12 +375,12 @@ details.about ul{margin:.4em 0}
 <input type="radio" name="kb0d2" id="kb0d21">
 <input type="radio" name="kb0d2" id="kb0d22">
 <input type="radio" name="kb0d2" id="kb0d23">
+<div class="sortrow"><label class="tlab slab" for="ks0d2e">Earliest</label><label class="tlab slab" for="ks0d2l">Latest</label><label class="tlab slab" for="ks0d2n">Nearest</label></div>
 <div class="subbar">
 <label class="tlab" for="kb0d20">Morning</label>
 <label class="tlab" for="kb0d21">Afternoon</label>
 <label class="tlab" for="kb0d22">Evening</label>
 <label class="tlab" for="kb0d23">Notes</label>
-<span class="sortseg"><label class="tlab slab" for="ks0d2e">Earliest</label><label class="tlab slab" for="ks0d2l">Latest</label><label class="tlab slab" for="ks0d2n">Nearest</label></span>
 </div>
 <div class="panes">
 <section class="pane p0kb0d2"><ul class="evt">
@@ -436,11 +436,11 @@ details.about ul{margin:.4em 0}
 <input type="radio" name="kb0d3" id="kb0d30" checked>
 <input type="radio" name="kb0d3" id="kb0d31">
 <input type="radio" name="kb0d3" id="kb0d32">
+<div class="sortrow"><label class="tlab slab" for="ks0d3e">Earliest</label><label class="tlab slab" for="ks0d3l">Latest</label><label class="tlab slab" for="ks0d3n">Nearest</label></div>
 <div class="subbar">
 <label class="tlab" for="kb0d30">Morning</label>
 <label class="tlab" for="kb0d31">Afternoon</label>
 <label class="tlab" for="kb0d32">Notes</label>
-<span class="sortseg"><label class="tlab slab" for="ks0d3e">Earliest</label><label class="tlab slab" for="ks0d3l">Latest</label><label class="tlab slab" for="ks0d3n">Nearest</label></span>
 </div>
 <div class="panes">
 <section class="pane p0kb0d3"><ul class="evt">
@@ -513,11 +513,11 @@ details.about ul{margin:.4em 0}
 <input type="radio" name="kb0d4" id="kb0d40" checked>
 <input type="radio" name="kb0d4" id="kb0d41">
 <input type="radio" name="kb0d4" id="kb0d42">
+<div class="sortrow"><label class="tlab slab" for="ks0d4e">Earliest</label><label class="tlab slab" for="ks0d4l">Latest</label><label class="tlab slab" for="ks0d4n">Nearest</label></div>
 <div class="subbar">
 <label class="tlab" for="kb0d40">Morning</label>
 <label class="tlab" for="kb0d41">Afternoon</label>
 <label class="tlab" for="kb0d42">Notes</label>
-<span class="sortseg"><label class="tlab slab" for="ks0d4e">Earliest</label><label class="tlab slab" for="ks0d4l">Latest</label><label class="tlab slab" for="ks0d4n">Nearest</label></span>
 </div>
 <div class="panes">
 <section class="pane p0kb0d4"><ul class="evt">
@@ -578,11 +578,11 @@ details.about ul{margin:.4em 0}
 <input type="radio" name="kb0d5" id="kb0d50" checked>
 <input type="radio" name="kb0d5" id="kb0d51">
 <input type="radio" name="kb0d5" id="kb0d52">
+<div class="sortrow"><label class="tlab slab" for="ks0d5e">Earliest</label><label class="tlab slab" for="ks0d5l">Latest</label><label class="tlab slab" for="ks0d5n">Nearest</label></div>
 <div class="subbar">
 <label class="tlab" for="kb0d50">Morning</label>
 <label class="tlab" for="kb0d51">Afternoon</label>
 <label class="tlab" for="kb0d52">Notes</label>
-<span class="sortseg"><label class="tlab slab" for="ks0d5e">Earliest</label><label class="tlab slab" for="ks0d5l">Latest</label><label class="tlab slab" for="ks0d5n">Nearest</label></span>
 </div>
 <div class="panes">
 <section class="pane p0kb0d5"><ul class="evt">
@@ -643,11 +643,11 @@ details.about ul{margin:.4em 0}
 <input type="radio" name="kb0d6" id="kb0d60" checked>
 <input type="radio" name="kb0d6" id="kb0d61">
 <input type="radio" name="kb0d6" id="kb0d62">
+<div class="sortrow"><label class="tlab slab" for="ks0d6e">Earliest</label><label class="tlab slab" for="ks0d6l">Latest</label><label class="tlab slab" for="ks0d6n">Nearest</label></div>
 <div class="subbar">
 <label class="tlab" for="kb0d60">Morning</label>
 <label class="tlab" for="kb0d61">Afternoon</label>
 <label class="tlab" for="kb0d62">Notes</label>
-<span class="sortseg"><label class="tlab slab" for="ks0d6e">Earliest</label><label class="tlab slab" for="ks0d6l">Latest</label><label class="tlab slab" for="ks0d6n">Nearest</label></span>
 </div>
 <div class="panes">
 <section class="pane p0kb0d6"><ul class="evt">
@@ -726,10 +726,10 @@ details.about ul{margin:.4em 0}
 <input type="radio" name="ks1d0" id="ks1d0n">
 <input type="radio" name="kb1d0" id="kb1d00" checked>
 <input type="radio" name="kb1d0" id="kb1d01">
+<div class="sortrow"><label class="tlab slab" for="ks1d0e">Earliest</label><label class="tlab slab" for="ks1d0l">Latest</label><label class="tlab slab" for="ks1d0n">Nearest</label></div>
 <div class="subbar">
 <label class="tlab" for="kb1d00">Morning</label>
 <label class="tlab" for="kb1d01">Afternoon</label>
-<span class="sortseg"><label class="tlab slab" for="ks1d0e">Earliest</label><label class="tlab slab" for="ks1d0l">Latest</label><label class="tlab slab" for="ks1d0n">Nearest</label></span>
 </div>
 <div class="panes">
 <section class="pane p0kb1d0"><ul class="evt">
@@ -791,10 +791,10 @@ details.about ul{margin:.4em 0}
 <input type="radio" name="ks1d1" id="ks1d1n">
 <input type="radio" name="kb1d1" id="kb1d10" checked>
 <input type="radio" name="kb1d1" id="kb1d11">
+<div class="sortrow"><label class="tlab slab" for="ks1d1e">Earliest</label><label class="tlab slab" for="ks1d1l">Latest</label><label class="tlab slab" for="ks1d1n">Nearest</label></div>
 <div class="subbar">
 <label class="tlab" for="kb1d10">Morning</label>
 <label class="tlab" for="kb1d11">Afternoon</label>
-<span class="sortseg"><label class="tlab slab" for="ks1d1e">Earliest</label><label class="tlab slab" for="ks1d1l">Latest</label><label class="tlab slab" for="ks1d1n">Nearest</label></span>
 </div>
 <div class="panes">
 <section class="pane p0kb1d1"><ul class="evt">
@@ -839,9 +839,9 @@ details.about ul{margin:.4em 0}
 <input type="radio" name="ks1d2" id="ks1d2l">
 <input type="radio" name="ks1d2" id="ks1d2n">
 <input type="radio" name="kb1d2" id="kb1d20" checked>
+<div class="sortrow"><label class="tlab slab" for="ks1d2e">Earliest</label><label class="tlab slab" for="ks1d2l">Latest</label><label class="tlab slab" for="ks1d2n">Nearest</label></div>
 <div class="subbar">
 <label class="tlab" for="kb1d20">Morning</label>
-<span class="sortseg"><label class="tlab slab" for="ks1d2e">Earliest</label><label class="tlab slab" for="ks1d2l">Latest</label><label class="tlab slab" for="ks1d2n">Nearest</label></span>
 </div>
 <div class="panes">
 <section class="pane p0kb1d2"><ul class="evt">
@@ -859,9 +859,9 @@ details.about ul{margin:.4em 0}
 <input type="radio" name="ks1d3" id="ks1d3l">
 <input type="radio" name="ks1d3" id="ks1d3n">
 <input type="radio" name="kb1d3" id="kb1d30" checked>
+<div class="sortrow"><label class="tlab slab" for="ks1d3e">Earliest</label><label class="tlab slab" for="ks1d3l">Latest</label><label class="tlab slab" for="ks1d3n">Nearest</label></div>
 <div class="subbar">
 <label class="tlab" for="kb1d30">Morning</label>
-<span class="sortseg"><label class="tlab slab" for="ks1d3e">Earliest</label><label class="tlab slab" for="ks1d3l">Latest</label><label class="tlab slab" for="ks1d3n">Nearest</label></span>
 </div>
 <div class="panes">
 <section class="pane p0kb1d3"><ul>
@@ -872,9 +872,9 @@ details.about ul{margin:.4em 0}
 <input type="radio" name="ks1d4" id="ks1d4l">
 <input type="radio" name="ks1d4" id="ks1d4n">
 <input type="radio" name="kb1d4" id="kb1d40" checked>
+<div class="sortrow"><label class="tlab slab" for="ks1d4e">Earliest</label><label class="tlab slab" for="ks1d4l">Latest</label><label class="tlab slab" for="ks1d4n">Nearest</label></div>
 <div class="subbar">
 <label class="tlab" for="kb1d40">Morning</label>
-<span class="sortseg"><label class="tlab slab" for="ks1d4e">Earliest</label><label class="tlab slab" for="ks1d4l">Latest</label><label class="tlab slab" for="ks1d4n">Nearest</label></span>
 </div>
 <div class="panes">
 <section class="pane p0kb1d4"><ul>
@@ -885,9 +885,9 @@ details.about ul{margin:.4em 0}
 <input type="radio" name="ks1d5" id="ks1d5l">
 <input type="radio" name="ks1d5" id="ks1d5n">
 <input type="radio" name="kb1d5" id="kb1d50" checked>
+<div class="sortrow"><label class="tlab slab" for="ks1d5e">Earliest</label><label class="tlab slab" for="ks1d5l">Latest</label><label class="tlab slab" for="ks1d5n">Nearest</label></div>
 <div class="subbar">
 <label class="tlab" for="kb1d50">Evening</label>
-<span class="sortseg"><label class="tlab slab" for="ks1d5e">Earliest</label><label class="tlab slab" for="ks1d5l">Latest</label><label class="tlab slab" for="ks1d5n">Nearest</label></span>
 </div>
 <div class="panes">
 <section class="pane p0kb1d5"><ul>
@@ -898,9 +898,9 @@ details.about ul{margin:.4em 0}
 <input type="radio" name="ks1d6" id="ks1d6l">
 <input type="radio" name="ks1d6" id="ks1d6n">
 <input type="radio" name="kb1d6" id="kb1d60" checked>
+<div class="sortrow"><label class="tlab slab" for="ks1d6e">Earliest</label><label class="tlab slab" for="ks1d6l">Latest</label><label class="tlab slab" for="ks1d6n">Nearest</label></div>
 <div class="subbar">
 <label class="tlab" for="kb1d60">Morning</label>
-<span class="sortseg"><label class="tlab slab" for="ks1d6e">Earliest</label><label class="tlab slab" for="ks1d6l">Latest</label><label class="tlab slab" for="ks1d6n">Nearest</label></span>
 </div>
 <div class="panes">
 <section class="pane p0kb1d6"><ul class="evt">
@@ -931,9 +931,9 @@ details.about ul{margin:.4em 0}
 <input type="radio" name="ks2d0" id="ks2d0l">
 <input type="radio" name="ks2d0" id="ks2d0n">
 <input type="radio" name="kb2d0" id="kb2d00" checked>
+<div class="sortrow"><label class="tlab slab" for="ks2d0e">Earliest</label><label class="tlab slab" for="ks2d0l">Latest</label><label class="tlab slab" for="ks2d0n">Nearest</label></div>
 <div class="subbar">
 <label class="tlab" for="kb2d00">Morning</label>
-<span class="sortseg"><label class="tlab slab" for="ks2d0e">Earliest</label><label class="tlab slab" for="ks2d0l">Latest</label><label class="tlab slab" for="ks2d0n">Nearest</label></span>
 </div>
 <div class="panes">
 <section class="pane p0kb2d0"><ul class="evt">
@@ -957,9 +957,9 @@ details.about ul{margin:.4em 0}
 <input type="radio" name="ks2d1" id="ks2d1l">
 <input type="radio" name="ks2d1" id="ks2d1n">
 <input type="radio" name="kb2d1" id="kb2d10" checked>
+<div class="sortrow"><label class="tlab slab" for="ks2d1e">Earliest</label><label class="tlab slab" for="ks2d1l">Latest</label><label class="tlab slab" for="ks2d1n">Nearest</label></div>
 <div class="subbar">
 <label class="tlab" for="kb2d10">Morning</label>
-<span class="sortseg"><label class="tlab slab" for="ks2d1e">Earliest</label><label class="tlab slab" for="ks2d1l">Latest</label><label class="tlab slab" for="ks2d1n">Nearest</label></span>
 </div>
 <div class="panes">
 <section class="pane p0kb2d1"><ul class="evt">
