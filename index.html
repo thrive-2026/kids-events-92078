@@ -22,7 +22,7 @@ hr{border:none;border-top:1px solid var(--border);margin:1.5em 0}
 a{color:var(--link)}
 input[name="kage"],input[name^="kday"],input[name^="kb"],input[name^="ks"],input[name^="kaf"]{display:none}
 .sortseg{display:flex;gap:6px;align-items:center;margin-left:auto;padding-left:10px;border-left:1px solid var(--border);flex:0 0 auto}
-.ageseg{display:flex;gap:6px;align-items:center;margin-left:auto;padding-left:10px;border-left:1px solid var(--border);flex:0 0 auto}
+.afilter{display:flex;gap:6px;align-items:center;margin:0 0 8px}
 .panes ul.evl,.panes ul.evd{display:none}
 .tabbar{position:sticky;top:0;background:var(--bg);padding:10px 0 8px;display:flex;gap:6px;overflow-x:auto;z-index:5;border-bottom:1px solid var(--border);margin-bottom:4px}
 .panes .tabbar{position:static}
@@ -204,9 +204,9 @@ input[name="kage"],input[name^="kday"],input[name^="kb"],input[name^="ks"],input
 #ks0d6l:checked ~ .subbar label[for="ks0d6l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #ks0d6n:checked ~ .subbar label[for="ks0d6n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kday0d6:checked ~ .subbar label[for="kday0d6"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#kaf0a:checked ~ .subbar label[for="kaf0a"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#kaf0u:checked ~ .subbar label[for="kaf0u"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#kaf06:checked ~ .subbar label[for="kaf06"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#kaf0a:checked ~ .afilter label[for="kaf0a"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#kaf0u:checked ~ .afilter label[for="kaf0u"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#kaf06:checked ~ .afilter label[for="kaf06"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb1d00:checked ~ .subbar label[for="kb1d00"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb1d01:checked ~ .subbar label[for="kb1d01"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #ks1d0e:checked ~ .subbar label[for="ks1d0e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
@@ -244,9 +244,9 @@ input[name="kage"],input[name^="kday"],input[name^="kb"],input[name^="ks"],input
 #ks1d6l:checked ~ .subbar label[for="ks1d6l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #ks1d6n:checked ~ .subbar label[for="ks1d6n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kday1d6:checked ~ .subbar label[for="kday1d6"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#kaf1a:checked ~ .subbar label[for="kaf1a"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#kaf1u:checked ~ .subbar label[for="kaf1u"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#kaf16:checked ~ .subbar label[for="kaf16"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#kaf1a:checked ~ .afilter label[for="kaf1a"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#kaf1u:checked ~ .afilter label[for="kaf1u"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#kaf16:checked ~ .afilter label[for="kaf16"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kb2d00:checked ~ .subbar label[for="kb2d00"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #ks2d0e:checked ~ .subbar label[for="ks2d0e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #ks2d0l:checked ~ .subbar label[for="ks2d0l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
@@ -289,6 +289,7 @@ details.about ul{margin:.4em 0}
 <section class="pane p0kage"><input type="radio" name="kaf0" id="kaf0a" checked>
 <input type="radio" name="kaf0" id="kaf0u">
 <input type="radio" name="kaf0" id="kaf06">
+<div class="afilter"><label class="tlab slab" for="kaf0a">All</label><label class="tlab slab" for="kaf0u">Under 6</label><label class="tlab slab" for="kaf06">6–12</label></div>
 <input type="radio" name="kday0" id="kday0d0" checked>
 <input type="radio" name="kday0" id="kday0d1">
 <input type="radio" name="kday0" id="kday0d2">
@@ -304,7 +305,6 @@ details.about ul{margin:.4em 0}
 <label class="tlab" for="kday0d4">Wed 10/7</label>
 <label class="tlab" for="kday0d5">Thu 10/8</label>
 <label class="tlab" for="kday0d6">Fri 10/9</label>
-<span class="ageseg"><label class="tlab slab" for="kaf0a">All</label><label class="tlab slab" for="kaf0u">Under 6</label><label class="tlab slab" for="kaf06">6–12</label></span>
 </div>
 <div class="panes">
 <section class="pane p0kday0"><input type="radio" name="ks0d0" id="ks0d0e" checked>
@@ -703,6 +703,7 @@ details.about ul{margin:.4em 0}
 <section class="pane p1kage"><input type="radio" name="kaf1" id="kaf1a" checked>
 <input type="radio" name="kaf1" id="kaf1u">
 <input type="radio" name="kaf1" id="kaf16">
+<div class="afilter"><label class="tlab slab" for="kaf1a">All</label><label class="tlab slab" for="kaf1u">Under 6</label><label class="tlab slab" for="kaf16">6–12</label></div>
 <input type="radio" name="kday1" id="kday1d0" checked>
 <input type="radio" name="kday1" id="kday1d1">
 <input type="radio" name="kday1" id="kday1d2">
@@ -718,7 +719,6 @@ details.about ul{margin:.4em 0}
 <label class="tlab" for="kday1d4">Wed 10/7</label>
 <label class="tlab" for="kday1d5">Thu 10/8</label>
 <label class="tlab" for="kday1d6">Fri 10/9</label>
-<span class="ageseg"><label class="tlab slab" for="kaf1a">All</label><label class="tlab slab" for="kaf1u">Under 6</label><label class="tlab slab" for="kaf16">6–12</label></span>
 </div>
 <div class="panes">
 <section class="pane p0kday1"><input type="radio" name="ks1d0" id="ks1d0e" checked>
