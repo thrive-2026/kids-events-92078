@@ -16,8 +16,8 @@ body{font-family:-apple-system,system-ui,sans-serif;max-width:680px;margin:0 aut
 h1{font-size:1.35em}h2{font-size:1.1em;margin-top:1.2em;border-bottom:1px solid var(--border);padding-bottom:4px}
 h3{font-size:1em;margin-top:1.1em}
 ul{padding-left:1.2em}li{margin-bottom:6px}
-.v{color:#1a7f37;font-weight:600}.u{color:#8a6d00;font-weight:600}
-@media (prefers-color-scheme: dark){.v{color:#4cc38a}.u{color:#d8a93b}}
+.v{color:#1a7f37;font-weight:600}.u{display:inline-block;background:#f5b301;color:#3d2c00;font-weight:700;font-size:.8em;padding:.08em .5em;border-radius:999px;letter-spacing:.03em;white-space:nowrap}.un{color:#8a6d00;font-size:.85em}
+@media (prefers-color-scheme: dark){.v{color:#4cc38a}.u{background:#c78f04;color:#fff8e1}.un{color:#d8a93b}}
 hr{border:none;border-top:1px solid var(--border);margin:1.5em 0}
 a{color:var(--link)}
 input[name="kage"],input[name^="kday"],input[name^="kb"],input[name^="ks"],input[name^="kaf"]{display:none}
@@ -279,7 +279,7 @@ details.about ul{margin:.4em 0}
 <details class="about"><summary>About this digest</summary><ul>
 <li><strong>Coverage:</strong> Kids' events ages 0–12 for Wed Oct 7 – Tue Oct 13, 2026, near ZIP 92078 (San Marcos, CA) — North County San Diego libraries, museums, parks &amp; rec, nature centers, bookstores, plus Irvine (~60 mi, included per request). Every library venue is labeled <strong>Branch (System)</strong>.</li>
 <li><strong>Tabs:</strong> Library | Around Town | Beyond | Notes. Library and Around Town each carry an All | Under 6 | 6–12 age filter — Under 6 is ages 0–5, 6–12 is ages 6–12; an event appears under every age tab its stated range touches, and family / all-ages / no-age-stated events appear under both.</li>
-<li><strong>Sort:</strong> each day tab has an Earliest | Latest | Nearest toggle. Morning = before 12:00 PM, Afternoon = 12:00–5:00 PM, Evening = 5:00 PM or later; untimed items list first in Morning. <span class="v">[V]</span> = verified this run, <span class="u">[U]</span> = carried/unverified. Paid costs are shown in <strong>bold</strong>.</li>
+<li><strong>Sort:</strong> each day tab has an Earliest | Latest | Nearest toggle. Morning = before 12:00 PM, Afternoon = 12:00–5:00 PM, Evening = 5:00 PM or later; untimed items list first in Morning. <span class="v">[V]</span> = verified this run, <span class="u">UNVERIFIED</span> = carried/unverified. Paid costs are shown in <strong>bold</strong>.</li>
 </ul></details>
 <div class="tabs">
 <input type="radio" name="kage" id="kage0" checked>
@@ -332,7 +332,7 @@ details.about ul{margin:.4em 0}
 <li class="a-u6"><span class="v">[V]</span> <strong>Wed 10/7, 10:30–11:00 AM</strong> — Toddler Storytime Yoga (toddlers + caregivers). <strong>Solana Beach (San Diego County Library)</strong> (~16 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Wed 10/7, 10:30–11:15 AM</strong> — Baby Storytime and Playdate (birth–18 months). <strong>Rancho Santa Fe (San Diego County Library)</strong> (~14 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Wed 10/7, 10:30–11:15 AM</strong> — Baby Storytime (ages 0–2). <strong>Mission (Oceanside Public Library)</strong> (~13 mi). Free. </li>
-<li class="a-u6"><span class="u">[U]</span> <strong>Wed 10/7, 10:30–11:30 AM</strong> — Preschool Storytime (ages 3–5). <strong>Cole (Carlsbad City Library)</strong> (~10 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Wed 10/7, 10:30–11:30 AM</strong> — Preschool Storytime (ages 3–5). <strong>Cole (Carlsbad City Library)</strong> (~10 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Wed 10/7, 11:00 AM–12:00 PM</strong> — Stay and Play (children's, open/all ages). <strong>Heritage Park (Irvine Public Library)</strong> (~60 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Wed 10/7, 11:00 AM–12:00 PM</strong> — Stay and Play (children's, open/all ages). <strong>University Park (Irvine Public Library)</strong> (~60 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Wed 10/7, 11:00 AM–12:00 PM</strong> — Stay and Play (children's, open/all ages). <strong>Katie Wheeler (Irvine Public Library)</strong> (~63 mi). Free. </li>
@@ -348,9 +348,9 @@ details.about ul{margin:.4em 0}
 <li class="a-u6"><span class="v">[V]</span> <strong>Wed 10/7, 10:30–11:00 AM</strong> — Toddler Storytime Yoga (toddlers + caregivers). <strong>Solana Beach (San Diego County Library)</strong> (~16 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Wed 10/7, 10:30–11:15 AM</strong> — Baby Storytime and Playdate (birth–18 months). <strong>Rancho Santa Fe (San Diego County Library)</strong> (~14 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Wed 10/7, 10:30–11:15 AM</strong> — Baby Storytime (ages 0–2). <strong>Mission (Oceanside Public Library)</strong> (~13 mi). Free. </li>
-<li class="a-u6"><span class="u">[U]</span> <strong>Wed 10/7, 10:30–11:30 AM</strong> — Preschool Storytime (ages 3–5). <strong>Cole (Carlsbad City Library)</strong> (~10 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Wed 10/7, 10:30–11:30 AM</strong> — Preschool Storytime (ages 3–5). <strong>Cole (Carlsbad City Library)</strong> (~10 mi). Free. </li>
 </ul><ul class="evd">
-<li class="a-u6"><span class="u">[U]</span> <strong>Wed 10/7, 10:30–11:30 AM</strong> — Preschool Storytime (ages 3–5). <strong>Cole (Carlsbad City Library)</strong> (~10 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Wed 10/7, 10:30–11:30 AM</strong> — Preschool Storytime (ages 3–5). <strong>Cole (Carlsbad City Library)</strong> (~10 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Wed 10/7, 10:30–11:30 AM</strong> — Preschool Storytime! (preschoolers). <strong>4S Ranch (San Diego County Library)</strong> (~11 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Wed 10/7, 10:30–11:15 AM</strong> — Baby Storytime (ages 0–2). <strong>Mission (Oceanside Public Library)</strong> (~13 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Wed 10/7, 10:30–11:15 AM</strong> — Baby Storytime and Playdate (birth–18 months). <strong>Rancho Santa Fe (San Diego County Library)</strong> (~14 mi). Free. </li>
@@ -368,18 +368,18 @@ details.about ul{margin:.4em 0}
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Wed 10/7, 3:00–4:00 PM</strong> — Cool Cursive Club (ages 5+). <strong>Ramona (San Diego County Library)</strong> (~27 mi). Free. </li>
 <li class="a-612"><span class="v">[V]</span> <strong>Wed 10/7, 3:00–4:00 PM</strong> — Tween Time (4th–8th graders; registration required). <strong>Rancho Santa Fe (San Diego County Library)</strong> (~14 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Wed 10/7, 3:30–4:30 PM</strong> — STEAM Kids: Spider Webs (kids). <strong>Poway (San Diego County Library)</strong> (~14 mi). Free. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Wed 10/7, 3:30–4:30 PM</strong> — Paws to Read / Lego Builders' Club (all ages). <strong>Cole (Carlsbad City Library)</strong> (~10 mi). Free. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Wed 10/7, 3:30–4:30 PM</strong> — Paws to Read / Lego Builders' Club (all ages). <strong>Cole (Carlsbad City Library)</strong> (~10 mi). Free. </li>
 <li class="a-612"><span class="v">[V]</span> <strong>Wed 10/7, 4:00–5:00 PM</strong> — Kid's DnD (ages 8–14; 8–12 portion). <strong>Valley Center (San Diego County Library)</strong> (~17 mi). Free. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Wed 10/7, 4:00–4:45 PM</strong> — Afternoon Eats at the Library (ages 0–12). <strong>Civic Center (Oceanside Public Library)</strong> (~15 mi). Free. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Wed 10/7, 4:00–4:45 PM</strong> — Afternoon Eats at the Library (ages 0–12). <strong>Civic Center (Oceanside Public Library)</strong> (~15 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Wed 10/7, 4:30–5:00 PM</strong> — Kids Lotería! (kids). <strong>4S Ranch (San Diego County Library)</strong> (~11 mi). Free. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Wed 10/7, 4:30–5:30 PM</strong> — Lotería Game Night (all ages). <strong>John Landes (Oceanside Public Library)</strong> (~14 mi). Free. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Wed 10/7, 4:30–5:30 PM</strong> — Lotería Game Night (all ages). <strong>John Landes (Oceanside Public Library)</strong> (~14 mi). Free. </li>
 </ul><ul class="evl">
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Wed 10/7, 4:30–5:00 PM</strong> — Kids Lotería! (kids). <strong>4S Ranch (San Diego County Library)</strong> (~11 mi). Free. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Wed 10/7, 4:30–5:30 PM</strong> — Lotería Game Night (all ages). <strong>John Landes (Oceanside Public Library)</strong> (~14 mi). Free. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Wed 10/7, 4:30–5:30 PM</strong> — Lotería Game Night (all ages). <strong>John Landes (Oceanside Public Library)</strong> (~14 mi). Free. </li>
 <li class="a-612"><span class="v">[V]</span> <strong>Wed 10/7, 4:00–5:00 PM</strong> — Kid's DnD (ages 8–14; 8–12 portion). <strong>Valley Center (San Diego County Library)</strong> (~17 mi). Free. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Wed 10/7, 4:00–4:45 PM</strong> — Afternoon Eats at the Library (ages 0–12). <strong>Civic Center (Oceanside Public Library)</strong> (~15 mi). Free. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Wed 10/7, 4:00–4:45 PM</strong> — Afternoon Eats at the Library (ages 0–12). <strong>Civic Center (Oceanside Public Library)</strong> (~15 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Wed 10/7, 3:30–4:30 PM</strong> — STEAM Kids: Spider Webs (kids). <strong>Poway (San Diego County Library)</strong> (~14 mi). Free. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Wed 10/7, 3:30–4:30 PM</strong> — Paws to Read / Lego Builders' Club (all ages). <strong>Cole (Carlsbad City Library)</strong> (~10 mi). Free. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Wed 10/7, 3:30–4:30 PM</strong> — Paws to Read / Lego Builders' Club (all ages). <strong>Cole (Carlsbad City Library)</strong> (~10 mi). Free. </li>
 <li class="a-612"><span class="v">[V]</span> <strong>Wed 10/7, 3:00–4:00 PM</strong> — Kids' Crafternoon (ages 6–10). <strong>Vista (San Diego County Library)</strong> (~7 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Wed 10/7, 3:00–4:00 PM</strong> — Cool Cursive Club (ages 5+). <strong>Ramona (San Diego County Library)</strong> (~27 mi). Free. </li>
 <li class="a-612"><span class="v">[V]</span> <strong>Wed 10/7, 3:00–4:00 PM</strong> — Tween Time (4th–8th graders; registration required). <strong>Rancho Santa Fe (San Diego County Library)</strong> (~14 mi). Free. </li>
@@ -387,12 +387,12 @@ details.about ul{margin:.4em 0}
 </ul><ul class="evd">
 <li class="a-u6"><span class="v">[V]</span> <strong>Wed 10/7, 1:00–1:30 PM</strong> — Baby Storytime (little ones &amp; caregivers). <strong>San Marcos (San Diego County Library)</strong> (~3 mi). Free. </li>
 <li class="a-612"><span class="v">[V]</span> <strong>Wed 10/7, 3:00–4:00 PM</strong> — Kids' Crafternoon (ages 6–10). <strong>Vista (San Diego County Library)</strong> (~7 mi). Free. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Wed 10/7, 3:30–4:30 PM</strong> — Paws to Read / Lego Builders' Club (all ages). <strong>Cole (Carlsbad City Library)</strong> (~10 mi). Free. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Wed 10/7, 3:30–4:30 PM</strong> — Paws to Read / Lego Builders' Club (all ages). <strong>Cole (Carlsbad City Library)</strong> (~10 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Wed 10/7, 4:30–5:00 PM</strong> — Kids Lotería! (kids). <strong>4S Ranch (San Diego County Library)</strong> (~11 mi). Free. </li>
 <li class="a-612"><span class="v">[V]</span> <strong>Wed 10/7, 3:00–4:00 PM</strong> — Tween Time (4th–8th graders; registration required). <strong>Rancho Santa Fe (San Diego County Library)</strong> (~14 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Wed 10/7, 3:30–4:30 PM</strong> — STEAM Kids: Spider Webs (kids). <strong>Poway (San Diego County Library)</strong> (~14 mi). Free. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Wed 10/7, 4:30–5:30 PM</strong> — Lotería Game Night (all ages). <strong>John Landes (Oceanside Public Library)</strong> (~14 mi). Free. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Wed 10/7, 4:00–4:45 PM</strong> — Afternoon Eats at the Library (ages 0–12). <strong>Civic Center (Oceanside Public Library)</strong> (~15 mi). Free. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Wed 10/7, 4:30–5:30 PM</strong> — Lotería Game Night (all ages). <strong>John Landes (Oceanside Public Library)</strong> (~14 mi). Free. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Wed 10/7, 4:00–4:45 PM</strong> — Afternoon Eats at the Library (ages 0–12). <strong>Civic Center (Oceanside Public Library)</strong> (~15 mi). Free. </li>
 <li class="a-612"><span class="v">[V]</span> <strong>Wed 10/7, 4:00–5:00 PM</strong> — Kid's DnD (ages 8–14; 8–12 portion). <strong>Valley Center (San Diego County Library)</strong> (~17 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Wed 10/7, 3:00–4:00 PM</strong> — Cool Cursive Club (ages 5+). <strong>Ramona (San Diego County Library)</strong> (~27 mi). Free. </li>
 </ul></section>
@@ -409,7 +409,7 @@ details.about ul{margin:.4em 0}
 </div>
 <div class="panes">
 <section class="pane p0kb0d1"><ul class="evt">
-<li class="a-u6"><span class="u">[U]</span> <strong>Thu 10/8, 10:00–10:30 AM</strong> — Baby Lapsit (ages 0–12 months). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Thu 10/8, 10:00–10:30 AM</strong> — Baby Lapsit (ages 0–12 months). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Thu 10/8, 10:30–11:30 AM</strong> — Play-to-Learn (ages 0–5). <strong>Valley Center (San Diego County Library)</strong> (~17 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Thu 10/8, 10:30–11:00 AM</strong> — Baby Storytime (up to 18 months + playtime). <strong>Solana Beach (San Diego County Library)</strong> (~16 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Thu 10/8, 10:30–11:30 AM</strong> — Toddlers &amp; Tunes! (toddlers; music &amp; movement). <strong>4S Ranch (San Diego County Library)</strong> (~11 mi). Free. </li>
@@ -420,13 +420,13 @@ details.about ul{margin:.4em 0}
 <li class="a-u6"><span class="v">[V]</span> <strong>Thu 10/8, 10:30–11:15 AM</strong> — Toddler-Preschool Storytime (ages 2–5). <strong>Civic Center (Oceanside Public Library)</strong> (~15 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Thu 10/8, 11:00 AM–11:30 AM</strong> — Japanese Storytime (children's, all ages). <strong>University Park (Irvine Public Library)</strong> (~60 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Thu 10/8, 11:00 AM–12:00 PM</strong> — Stay and Play (children's, open/all ages). <strong>Heritage Park (Irvine Public Library)</strong> (~60 mi). Free. </li>
-<li class="a-u6"><span class="u">[U]</span> <strong>Thu 10/8, 11:00–11:30 AM</strong> — Bilingual Storytime (ages 3–5). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Thu 10/8, 11:00–11:30 AM</strong> — Bilingual Storytime (ages 3–5). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Thu 10/8, 11:30 AM–12:00 PM</strong> — Cuentos Para Niños (ages 2–5). <strong>Mission (Oceanside Public Library)</strong> (~13 mi). Free. </li>
 </ul><ul class="evl">
 <li class="a-u6"><span class="v">[V]</span> <strong>Thu 10/8, 11:30 AM–12:00 PM</strong> — Cuentos Para Niños (ages 2–5). <strong>Mission (Oceanside Public Library)</strong> (~13 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Thu 10/8, 11:00 AM–11:30 AM</strong> — Japanese Storytime (children's, all ages). <strong>University Park (Irvine Public Library)</strong> (~60 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Thu 10/8, 11:00 AM–12:00 PM</strong> — Stay and Play (children's, open/all ages). <strong>Heritage Park (Irvine Public Library)</strong> (~60 mi). Free. </li>
-<li class="a-u6"><span class="u">[U]</span> <strong>Thu 10/8, 11:00–11:30 AM</strong> — Bilingual Storytime (ages 3–5). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Thu 10/8, 11:00–11:30 AM</strong> — Bilingual Storytime (ages 3–5). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Thu 10/8, 10:30–11:30 AM</strong> — Play-to-Learn (ages 0–5). <strong>Valley Center (San Diego County Library)</strong> (~17 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Thu 10/8, 10:30–11:00 AM</strong> — Baby Storytime (up to 18 months + playtime). <strong>Solana Beach (San Diego County Library)</strong> (~16 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Thu 10/8, 10:30–11:30 AM</strong> — Toddlers &amp; Tunes! (toddlers; music &amp; movement). <strong>4S Ranch (San Diego County Library)</strong> (~11 mi). Free. </li>
@@ -435,12 +435,12 @@ details.about ul{margin:.4em 0}
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Thu 10/8, 10:30–11:00 AM</strong> — Hispanic Heritage Month Storytime (kids). <strong>Poway (San Diego County Library)</strong> (~14 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Thu 10/8, 10:30–11:15 AM</strong> — Toddler Storytime (ages 18 months–3). <strong>Rancho Santa Fe (San Diego County Library)</strong> (~14 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Thu 10/8, 10:30–11:15 AM</strong> — Toddler-Preschool Storytime (ages 2–5). <strong>Civic Center (Oceanside Public Library)</strong> (~15 mi). Free. </li>
-<li class="a-u6"><span class="u">[U]</span> <strong>Thu 10/8, 10:00–10:30 AM</strong> — Baby Lapsit (ages 0–12 months). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Thu 10/8, 10:00–10:30 AM</strong> — Baby Lapsit (ages 0–12 months). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
 </ul><ul class="evd">
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Thu 10/8, 10:30–11:00 AM</strong> — Family Storytime (all ages). <strong>San Marcos (San Diego County Library)</strong> (~3 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Thu 10/8, 10:30–11:00 AM</strong> — Bilingual Storytime | Cantos y Cuentos (ages 0–5). <strong>Vista (San Diego County Library)</strong> (~7 mi). Free. </li>
-<li class="a-u6"><span class="u">[U]</span> <strong>Thu 10/8, 10:00–10:30 AM</strong> — Baby Lapsit (ages 0–12 months). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
-<li class="a-u6"><span class="u">[U]</span> <strong>Thu 10/8, 11:00–11:30 AM</strong> — Bilingual Storytime (ages 3–5). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Thu 10/8, 10:00–10:30 AM</strong> — Baby Lapsit (ages 0–12 months). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Thu 10/8, 11:00–11:30 AM</strong> — Bilingual Storytime (ages 3–5). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Thu 10/8, 10:30–11:30 AM</strong> — Toddlers &amp; Tunes! (toddlers; music &amp; movement). <strong>4S Ranch (San Diego County Library)</strong> (~11 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Thu 10/8, 11:30 AM–12:00 PM</strong> — Cuentos Para Niños (ages 2–5). <strong>Mission (Oceanside Public Library)</strong> (~13 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Thu 10/8, 10:30–11:00 AM</strong> — Hispanic Heritage Month Storytime (kids). <strong>Poway (San Diego County Library)</strong> (~14 mi). Free. </li>
@@ -457,27 +457,27 @@ details.about ul{margin:.4em 0}
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Thu 10/8, 3:00–4:00 PM</strong> — Homework Help (grades K–8). <strong>Valley Center (San Diego County Library)</strong> (~17 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Thu 10/8, 3:00–4:00 PM</strong> — The LEGO Club (kids). <strong>Valley Center (San Diego County Library)</strong> (~17 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Thu 10/8, 3:30–4:30 PM</strong> — LEGO Builders Club (ages 5+). <strong>Vista (San Diego County Library)</strong> (~7 mi). Free. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Thu 10/8, 3:30–4:30 PM</strong> — Paws to Read (all ages). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Thu 10/8, 3:30–4:30 PM</strong> — Paws to Read (all ages). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Thu 10/8, 4:00–5:00 PM</strong> — Beginning Guitar (all ages; registration required). <strong>Valley Center (San Diego County Library)</strong> (~17 mi). Free. </li>
 <li class="a-612"><span class="v">[V]</span> <strong>Thu 10/8, 4:00–4:45 PM</strong> — Tween Book Club (grades 4–8). <strong>Katie Wheeler (Irvine Public Library)</strong> (~63 mi). Free. </li>
-<li class="a-612"><span class="u">[U]</span> <strong>Thu 10/8, 4:00–6:00 PM</strong> — Homework Helpers (grades K–8). <strong>Mission (Oceanside Public Library)</strong> (~13 mi). Free. </li>
+<li class="a-612"><span class="u">UNVERIFIED</span> <strong>Thu 10/8, 4:00–6:00 PM</strong> — Homework Helpers (grades K–8). <strong>Mission (Oceanside Public Library)</strong> (~13 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Thu 10/8, 4:30–5:30 PM</strong> — Education in Action Tutoring (elementary &amp; middle school). <strong>4S Ranch (San Diego County Library)</strong> (~11 mi). Free. </li>
 </ul><ul class="evl">
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Thu 10/8, 4:30–5:30 PM</strong> — Education in Action Tutoring (elementary &amp; middle school). <strong>4S Ranch (San Diego County Library)</strong> (~11 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Thu 10/8, 4:00–5:00 PM</strong> — Beginning Guitar (all ages; registration required). <strong>Valley Center (San Diego County Library)</strong> (~17 mi). Free. </li>
 <li class="a-612"><span class="v">[V]</span> <strong>Thu 10/8, 4:00–4:45 PM</strong> — Tween Book Club (grades 4–8). <strong>Katie Wheeler (Irvine Public Library)</strong> (~63 mi). Free. </li>
-<li class="a-612"><span class="u">[U]</span> <strong>Thu 10/8, 4:00–6:00 PM</strong> — Homework Helpers (grades K–8). <strong>Mission (Oceanside Public Library)</strong> (~13 mi). Free. </li>
+<li class="a-612"><span class="u">UNVERIFIED</span> <strong>Thu 10/8, 4:00–6:00 PM</strong> — Homework Helpers (grades K–8). <strong>Mission (Oceanside Public Library)</strong> (~13 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Thu 10/8, 3:30–4:30 PM</strong> — LEGO Builders Club (ages 5+). <strong>Vista (San Diego County Library)</strong> (~7 mi). Free. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Thu 10/8, 3:30–4:30 PM</strong> — Paws to Read (all ages). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Thu 10/8, 3:30–4:30 PM</strong> — Paws to Read (all ages). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Thu 10/8, 3:00–4:00 PM</strong> — Homework Help (grades K–8). <strong>Valley Center (San Diego County Library)</strong> (~17 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Thu 10/8, 3:00–4:00 PM</strong> — The LEGO Club (kids). <strong>Valley Center (San Diego County Library)</strong> (~17 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Thu 10/8, 2:30–3:30 PM</strong> — Color, Cut &amp; Create: Kids' Art Buffet (kids). <strong>Rancho Santa Fe (San Diego County Library)</strong> (~14 mi). Free. </li>
 <li class="a-612"><span class="v">[V]</span> <strong>Thu 10/8, 1:00–2:00 PM</strong> — Crafternoon (ages 6–10). <strong>Poway (San Diego County Library)</strong> (~14 mi). Free. </li>
 </ul><ul class="evd">
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Thu 10/8, 3:30–4:30 PM</strong> — LEGO Builders Club (ages 5+). <strong>Vista (San Diego County Library)</strong> (~7 mi). Free. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Thu 10/8, 3:30–4:30 PM</strong> — Paws to Read (all ages). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Thu 10/8, 3:30–4:30 PM</strong> — Paws to Read (all ages). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Thu 10/8, 4:30–5:30 PM</strong> — Education in Action Tutoring (elementary &amp; middle school). <strong>4S Ranch (San Diego County Library)</strong> (~11 mi). Free. </li>
-<li class="a-612"><span class="u">[U]</span> <strong>Thu 10/8, 4:00–6:00 PM</strong> — Homework Helpers (grades K–8). <strong>Mission (Oceanside Public Library)</strong> (~13 mi). Free. </li>
+<li class="a-612"><span class="u">UNVERIFIED</span> <strong>Thu 10/8, 4:00–6:00 PM</strong> — Homework Helpers (grades K–8). <strong>Mission (Oceanside Public Library)</strong> (~13 mi). Free. </li>
 <li class="a-612"><span class="v">[V]</span> <strong>Thu 10/8, 1:00–2:00 PM</strong> — Crafternoon (ages 6–10). <strong>Poway (San Diego County Library)</strong> (~14 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Thu 10/8, 2:30–3:30 PM</strong> — Color, Cut &amp; Create: Kids' Art Buffet (kids). <strong>Rancho Santa Fe (San Diego County Library)</strong> (~14 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Thu 10/8, 3:00–4:00 PM</strong> — Homework Help (grades K–8). <strong>Valley Center (San Diego County Library)</strong> (~17 mi). Free. </li>
@@ -505,8 +505,8 @@ details.about ul{margin:.4em 0}
 <li class="a-u6"><span class="v">[V]</span> <strong>Fri 10/9, 10:30–11:00 AM</strong> — Dance Party (toddlers 18 months–3). <strong>Solana Beach (San Diego County Library)</strong> (~16 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Fri 10/9, 10:30–11:30 AM</strong> — Family Play Time (little ones &amp; caregivers). <strong>Del Mar (San Diego County Library)</strong> (~19 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Fri 10/9, 10:30–11:00 AM</strong> — Baby Playtime (pre-walkers). <strong>Ramona (San Diego County Library)</strong> (~27 mi). Free. </li>
-<li class="a-u6"><span class="u">[U]</span> <strong>Fri 10/9, 10:30–11:30 AM</strong> — Baby Lapsit (babies). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
-<li class="a-u6"><span class="u">[U]</span> <strong>Fri 10/9, 10:30–11:00 AM</strong> — Bilingual Toddler Time (toddlers). <strong>Learning Center (Carlsbad City Library)</strong> (~10 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Fri 10/9, 10:30–11:30 AM</strong> — Baby Lapsit (babies). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Fri 10/9, 10:30–11:00 AM</strong> — Bilingual Toddler Time (toddlers). <strong>Learning Center (Carlsbad City Library)</strong> (~10 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Fri 10/9, 11:00 AM–11:30 AM</strong> — Spanish Storytime (children's, all ages). <strong>University Park (Irvine Public Library)</strong> (~60 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Fri 10/9, 11:00 AM–11:30 AM</strong> — Stay and Play (children's, open/all ages). <strong>Heritage Park (Irvine Public Library)</strong> (~60 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Fri 10/9, 11:30 AM–12:30 PM</strong> — Sensory Storytime (ages 1–3). <strong>San Marcos (San Diego County Library)</strong> (~3 mi). Free. </li>
@@ -520,14 +520,14 @@ details.about ul{margin:.4em 0}
 <li class="a-u6"><span class="v">[V]</span> <strong>Fri 10/9, 10:30–11:00 AM</strong> — Dance Party (toddlers 18 months–3). <strong>Solana Beach (San Diego County Library)</strong> (~16 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Fri 10/9, 10:30–11:30 AM</strong> — Family Play Time (little ones &amp; caregivers). <strong>Del Mar (San Diego County Library)</strong> (~19 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Fri 10/9, 10:30–11:00 AM</strong> — Baby Playtime (pre-walkers). <strong>Ramona (San Diego County Library)</strong> (~27 mi). Free. </li>
-<li class="a-u6"><span class="u">[U]</span> <strong>Fri 10/9, 10:30–11:30 AM</strong> — Baby Lapsit (babies). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
-<li class="a-u6"><span class="u">[U]</span> <strong>Fri 10/9, 10:30–11:00 AM</strong> — Bilingual Toddler Time (toddlers). <strong>Learning Center (Carlsbad City Library)</strong> (~10 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Fri 10/9, 10:30–11:30 AM</strong> — Baby Lapsit (babies). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Fri 10/9, 10:30–11:00 AM</strong> — Bilingual Toddler Time (toddlers). <strong>Learning Center (Carlsbad City Library)</strong> (~10 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Fri 10/9, 10:00–11:00 AM</strong> — Tots and Blocks (ages 0–5). <strong>San Marcos (San Diego County Library)</strong> (~3 mi). Free. </li>
 </ul><ul class="evd">
 <li class="a-u6"><span class="v">[V]</span> <strong>Fri 10/9, 10:00–11:00 AM</strong> — Tots and Blocks (ages 0–5). <strong>San Marcos (San Diego County Library)</strong> (~3 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Fri 10/9, 11:30 AM–12:30 PM</strong> — Sensory Storytime (ages 1–3). <strong>San Marcos (San Diego County Library)</strong> (~3 mi). Free. </li>
-<li class="a-u6"><span class="u">[U]</span> <strong>Fri 10/9, 10:30–11:30 AM</strong> — Baby Lapsit (babies). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
-<li class="a-u6"><span class="u">[U]</span> <strong>Fri 10/9, 10:30–11:00 AM</strong> — Bilingual Toddler Time (toddlers). <strong>Learning Center (Carlsbad City Library)</strong> (~10 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Fri 10/9, 10:30–11:30 AM</strong> — Baby Lapsit (babies). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Fri 10/9, 10:30–11:00 AM</strong> — Bilingual Toddler Time (toddlers). <strong>Learning Center (Carlsbad City Library)</strong> (~10 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Fri 10/9, 10:30–11:30 AM</strong> — Baby Storytime! (babies &amp; caregivers). <strong>4S Ranch (San Diego County Library)</strong> (~11 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Fri 10/9, 10:30–11:30 AM</strong> — Preschool Play (toddlers &amp; preschoolers). <strong>Poway (San Diego County Library)</strong> (~14 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Fri 10/9, 10:30–11:00 AM</strong> — Dance Party (toddlers 18 months–3). <strong>Solana Beach (San Diego County Library)</strong> (~16 mi). Free. </li>
@@ -539,14 +539,14 @@ details.about ul{margin:.4em 0}
 </ul></section>
 <section class="pane p1kb0d2"><ul class="evt">
 <li class="a-612"><span class="v">[V]</span> <strong>Fri 10/9, 2:30–3:15 PM</strong> — Love on a Leash (ages 6–10). <strong>Poway (San Diego County Library)</strong> (~14 mi). Free. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Fri 10/9, 3:30–4:30 PM</strong> — Read to a Dragon (children/tweens). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Fri 10/9, 3:30–4:30 PM</strong> — Read to a Dragon (children/tweens). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Fri 10/9, 4:00–5:00 PM</strong> — Chinese Culture Club (children). <strong>4S Ranch (San Diego County Library)</strong> (~11 mi). Free. </li>
 </ul><ul class="evl">
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Fri 10/9, 4:00–5:00 PM</strong> — Chinese Culture Club (children). <strong>4S Ranch (San Diego County Library)</strong> (~11 mi). Free. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Fri 10/9, 3:30–4:30 PM</strong> — Read to a Dragon (children/tweens). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Fri 10/9, 3:30–4:30 PM</strong> — Read to a Dragon (children/tweens). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
 <li class="a-612"><span class="v">[V]</span> <strong>Fri 10/9, 2:30–3:15 PM</strong> — Love on a Leash (ages 6–10). <strong>Poway (San Diego County Library)</strong> (~14 mi). Free. </li>
 </ul><ul class="evd">
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Fri 10/9, 3:30–4:30 PM</strong> — Read to a Dragon (children/tweens). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Fri 10/9, 3:30–4:30 PM</strong> — Read to a Dragon (children/tweens). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Fri 10/9, 4:00–5:00 PM</strong> — Chinese Culture Club (children). <strong>4S Ranch (San Diego County Library)</strong> (~11 mi). Free. </li>
 <li class="a-612"><span class="v">[V]</span> <strong>Fri 10/9, 2:30–3:15 PM</strong> — Love on a Leash (ages 6–10). <strong>Poway (San Diego County Library)</strong> (~14 mi). Free. </li>
 </ul></section>
@@ -569,17 +569,17 @@ details.about ul{margin:.4em 0}
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sat 10/10, 10:30–11:15 AM</strong> — Family Storytime (all ages/family). <strong>Katie Wheeler (Irvine Public Library)</strong> (~63 mi). Free. </li>
 <li class="a-612"><span class="v">[V]</span> <strong>Sat 10/10, 11:00 AM–12:00 PM</strong> — Computer Coding for Teens (ages 10–17; 10–12 portion). <strong>Ramona (San Diego County Library)</strong> (~27 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sat 10/10, 11:00–11:45 AM</strong> — Kid's Yoga (ages 4–12). <strong>4S Ranch (San Diego County Library)</strong> (~11 mi). Free. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Sat 10/10, 11:00–11:30 AM</strong> — Saturday Stories (all ages). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Sat 10/10, 11:00–11:30 AM</strong> — Saturday Stories (all ages). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
 </ul><ul class="evl">
 <li class="a-612"><span class="v">[V]</span> <strong>Sat 10/10, 11:00 AM–12:00 PM</strong> — Computer Coding for Teens (ages 10–17; 10–12 portion). <strong>Ramona (San Diego County Library)</strong> (~27 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sat 10/10, 11:00–11:45 AM</strong> — Kid's Yoga (ages 4–12). <strong>4S Ranch (San Diego County Library)</strong> (~11 mi). Free. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Sat 10/10, 11:00–11:30 AM</strong> — Saturday Stories (all ages). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Sat 10/10, 11:00–11:30 AM</strong> — Saturday Stories (all ages). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Sat 10/10, 10:30–11:00 AM</strong> — Dance Party Storytime (toddlers 18m–3). <strong>Poway (San Diego County Library)</strong> (~14 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sat 10/10, 10:30 AM–1:00 PM</strong> — Del Mar Library 30th Anniversary Celebration (all ages). <strong>Del Mar (San Diego County Library)</strong> (~19 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sat 10/10, 10:30–11:15 AM</strong> — Family Storytime (all ages/family). <strong>Katie Wheeler (Irvine Public Library)</strong> (~63 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sat 10/10, 9:30 AM–12:30 PM</strong> — Family Craft Time with Assisteens (all ages/family). <strong>Heritage Park (Irvine Public Library)</strong> (~60 mi). Free. </li>
 </ul><ul class="evd">
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Sat 10/10, 11:00–11:30 AM</strong> — Saturday Stories (all ages). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Sat 10/10, 11:00–11:30 AM</strong> — Saturday Stories (all ages). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sat 10/10, 11:00–11:45 AM</strong> — Kid's Yoga (ages 4–12). <strong>4S Ranch (San Diego County Library)</strong> (~11 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Sat 10/10, 10:30–11:00 AM</strong> — Dance Party Storytime (toddlers 18m–3). <strong>Poway (San Diego County Library)</strong> (~14 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sat 10/10, 10:30 AM–1:00 PM</strong> — Del Mar Library 30th Anniversary Celebration (all ages). <strong>Del Mar (San Diego County Library)</strong> (~19 mi). Free. </li>
@@ -590,18 +590,18 @@ details.about ul{margin:.4em 0}
 <section class="pane p1kb0d3"><ul class="evt">
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sat 10/10, 1:00–3:00 PM</strong> — Valley Center Fiddle Club (all ages). <strong>Valley Center (San Diego County Library)</strong> (~17 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sat 10/10, 2:00–3:00 PM</strong> — BOOKS &amp; BONES (kids). <strong>4S Ranch (San Diego County Library)</strong> (~11 mi). Free. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Sat 10/10, 2:00–3:00 PM</strong> — LEGO Builder's Club (ages 5+). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Sat 10/10, 2:00–4:00 PM</strong> — Saturday Chess Meet-Up (all ages). <strong>Learning Center (Carlsbad City Library)</strong> (~10 mi). Free. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Sat 10/10, 2:00–3:00 PM</strong> — LEGO Builder's Club (ages 5+). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Sat 10/10, 2:00–4:00 PM</strong> — Saturday Chess Meet-Up (all ages). <strong>Learning Center (Carlsbad City Library)</strong> (~10 mi). Free. </li>
 <li class="a-612"><span class="v">[V]</span> <strong>Sat 10/10, 3:00–4:30 PM</strong> — Chess Club (grades 1–12; 6–12 portion). <strong>4S Ranch (San Diego County Library)</strong> (~11 mi). Free. </li>
 </ul><ul class="evl">
 <li class="a-612"><span class="v">[V]</span> <strong>Sat 10/10, 3:00–4:30 PM</strong> — Chess Club (grades 1–12; 6–12 portion). <strong>4S Ranch (San Diego County Library)</strong> (~11 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sat 10/10, 2:00–3:00 PM</strong> — BOOKS &amp; BONES (kids). <strong>4S Ranch (San Diego County Library)</strong> (~11 mi). Free. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Sat 10/10, 2:00–3:00 PM</strong> — LEGO Builder's Club (ages 5+). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Sat 10/10, 2:00–4:00 PM</strong> — Saturday Chess Meet-Up (all ages). <strong>Learning Center (Carlsbad City Library)</strong> (~10 mi). Free. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Sat 10/10, 2:00–3:00 PM</strong> — LEGO Builder's Club (ages 5+). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Sat 10/10, 2:00–4:00 PM</strong> — Saturday Chess Meet-Up (all ages). <strong>Learning Center (Carlsbad City Library)</strong> (~10 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sat 10/10, 1:00–3:00 PM</strong> — Valley Center Fiddle Club (all ages). <strong>Valley Center (San Diego County Library)</strong> (~17 mi). Free. </li>
 </ul><ul class="evd">
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Sat 10/10, 2:00–3:00 PM</strong> — LEGO Builder's Club (ages 5+). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Sat 10/10, 2:00–4:00 PM</strong> — Saturday Chess Meet-Up (all ages). <strong>Learning Center (Carlsbad City Library)</strong> (~10 mi). Free. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Sat 10/10, 2:00–3:00 PM</strong> — LEGO Builder's Club (ages 5+). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Sat 10/10, 2:00–4:00 PM</strong> — Saturday Chess Meet-Up (all ages). <strong>Learning Center (Carlsbad City Library)</strong> (~10 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sat 10/10, 2:00–3:00 PM</strong> — BOOKS &amp; BONES (kids). <strong>4S Ranch (San Diego County Library)</strong> (~11 mi). Free. </li>
 <li class="a-612"><span class="v">[V]</span> <strong>Sat 10/10, 3:00–4:30 PM</strong> — Chess Club (grades 1–12; 6–12 portion). <strong>4S Ranch (San Diego County Library)</strong> (~11 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sat 10/10, 1:00–3:00 PM</strong> — Valley Center Fiddle Club (all ages). <strong>Valley Center (San Diego County Library)</strong> (~17 mi). Free. </li>
@@ -645,7 +645,7 @@ details.about ul{margin:.4em 0}
 <li class="a-u6"><span class="v">[V]</span> <strong>Mon 10/12, 10:30–11:00 AM</strong> — Toddler &amp; Me Music Class (ages 2–5; off-site at Fallbrook Wellness Center during branch closure). <strong>Fallbrook (San Diego County Library)</strong> (~20 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Mon 10/12, 10:30–11:00 AM</strong> — Preschool Playtime (preschoolers). <strong>Vista (San Diego County Library)</strong> (~7 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Mon 10/12, 10:30–11:30 AM</strong> — Japanese Storytime (all ages). <strong>San Marcos (San Diego County Library)</strong> (~3 mi). Free. </li>
-<li class="a-u6"><span class="u">[U]</span> <strong>Mon 10/12, 10:30–11:30 AM</strong> — Little Explorers: pre-K storytime + play (ages 3–5). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Mon 10/12, 10:30–11:30 AM</strong> — Little Explorers: pre-K storytime + play (ages 3–5). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Mon 10/12, 11:00 AM–12:00 PM</strong> — Stay and Play (children's, open/all ages). <strong>University Park (Irvine Public Library)</strong> (~60 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Mon 10/12, 11:00 AM–12:00 PM</strong> — Stay and Play (children's, open/all ages). <strong>Katie Wheeler (Irvine Public Library)</strong> (~63 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Mon 10/12, 11:00–11:30 AM</strong> — Baby Storytime (pre-walkers). <strong>Poway (San Diego County Library)</strong> (~14 mi). Free. </li>
@@ -658,11 +658,11 @@ details.about ul{margin:.4em 0}
 <li class="a-u6"><span class="v">[V]</span> <strong>Mon 10/12, 10:30–11:00 AM</strong> — Toddler &amp; Me Music Class (ages 2–5; off-site at Fallbrook Wellness Center during branch closure). <strong>Fallbrook (San Diego County Library)</strong> (~20 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Mon 10/12, 10:30–11:00 AM</strong> — Preschool Playtime (preschoolers). <strong>Vista (San Diego County Library)</strong> (~7 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Mon 10/12, 10:30–11:30 AM</strong> — Japanese Storytime (all ages). <strong>San Marcos (San Diego County Library)</strong> (~3 mi). Free. </li>
-<li class="a-u6"><span class="u">[U]</span> <strong>Mon 10/12, 10:30–11:30 AM</strong> — Little Explorers: pre-K storytime + play (ages 3–5). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Mon 10/12, 10:30–11:30 AM</strong> — Little Explorers: pre-K storytime + play (ages 3–5). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
 </ul><ul class="evd">
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Mon 10/12, 10:30–11:30 AM</strong> — Japanese Storytime (all ages). <strong>San Marcos (San Diego County Library)</strong> (~3 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Mon 10/12, 10:30–11:00 AM</strong> — Preschool Playtime (preschoolers). <strong>Vista (San Diego County Library)</strong> (~7 mi). Free. </li>
-<li class="a-u6"><span class="u">[U]</span> <strong>Mon 10/12, 10:30–11:30 AM</strong> — Little Explorers: pre-K storytime + play (ages 3–5). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Mon 10/12, 10:30–11:30 AM</strong> — Little Explorers: pre-K storytime + play (ages 3–5). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Mon 10/12, 11:00–11:30 AM</strong> — Baby Storytime (pre-walkers). <strong>Poway (San Diego County Library)</strong> (~14 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Mon 10/12, 10:30–11:15 AM</strong> — Signing Storytime (birth–12 months). <strong>Encinitas (San Diego County Library)</strong> (~15 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Mon 10/12, 10:30–11:00 AM</strong> — Toddler Storytime (ages 1.5–3). <strong>Solana Beach (San Diego County Library)</strong> (~16 mi). Free. </li>
@@ -676,17 +676,17 @@ details.about ul{margin:.4em 0}
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Mon 10/12, 2:30–3:30 PM</strong> — Read with Liberty (young readers). <strong>Rancho Santa Fe (San Diego County Library)</strong> (~14 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Mon 10/12, 4:00–5:00 PM</strong> — Paws to Read (children). <strong>San Marcos (San Diego County Library)</strong> (~3 mi). Free. </li>
 <li class="a-612"><span class="v">[V]</span> <strong>Mon 10/12, 4:00–4:45 PM</strong> — Chess Afternoons (ages 6–12). <strong>University Park (Irvine Public Library)</strong> (~60 mi). Free. </li>
-<li class="a-612"><span class="u">[U]</span> <strong>Mon 10/12, 4:00–5:00 PM</strong> — Knights Realm Chess Club (ages 6–12). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
+<li class="a-612"><span class="u">UNVERIFIED</span> <strong>Mon 10/12, 4:00–5:00 PM</strong> — Knights Realm Chess Club (ages 6–12). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
 </ul><ul class="evl">
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Mon 10/12, 4:00–5:00 PM</strong> — Paws to Read (children). <strong>San Marcos (San Diego County Library)</strong> (~3 mi). Free. </li>
 <li class="a-612"><span class="v">[V]</span> <strong>Mon 10/12, 4:00–4:45 PM</strong> — Chess Afternoons (ages 6–12). <strong>University Park (Irvine Public Library)</strong> (~60 mi). Free. </li>
-<li class="a-612"><span class="u">[U]</span> <strong>Mon 10/12, 4:00–5:00 PM</strong> — Knights Realm Chess Club (ages 6–12). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
+<li class="a-612"><span class="u">UNVERIFIED</span> <strong>Mon 10/12, 4:00–5:00 PM</strong> — Knights Realm Chess Club (ages 6–12). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Mon 10/12, 2:30–3:00 PM</strong> — Bookmobile's Bilingual Storytime (ages 2–5). <strong>Oceanside Public Library — Bookmobile (Oceanside Public Library)</strong> (~13 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Mon 10/12, 2:30–3:30 PM</strong> — Lego Lab (kids). <strong>Rancho Santa Fe (San Diego County Library)</strong> (~14 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Mon 10/12, 2:30–3:30 PM</strong> — Read with Liberty (young readers). <strong>Rancho Santa Fe (San Diego County Library)</strong> (~14 mi). Free. </li>
 </ul><ul class="evd">
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Mon 10/12, 4:00–5:00 PM</strong> — Paws to Read (children). <strong>San Marcos (San Diego County Library)</strong> (~3 mi). Free. </li>
-<li class="a-612"><span class="u">[U]</span> <strong>Mon 10/12, 4:00–5:00 PM</strong> — Knights Realm Chess Club (ages 6–12). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
+<li class="a-612"><span class="u">UNVERIFIED</span> <strong>Mon 10/12, 4:00–5:00 PM</strong> — Knights Realm Chess Club (ages 6–12). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Mon 10/12, 2:30–3:00 PM</strong> — Bookmobile's Bilingual Storytime (ages 2–5). <strong>Oceanside Public Library — Bookmobile (Oceanside Public Library)</strong> (~13 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Mon 10/12, 2:30–3:30 PM</strong> — Lego Lab (kids). <strong>Rancho Santa Fe (San Diego County Library)</strong> (~14 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Mon 10/12, 2:30–3:30 PM</strong> — Read with Liberty (young readers). <strong>Rancho Santa Fe (San Diego County Library)</strong> (~14 mi). Free. </li>
@@ -707,11 +707,11 @@ details.about ul{margin:.4em 0}
 </div>
 <div class="panes">
 <section class="pane p0kb0d6"><ul class="evt">
-<li class="a-u6"><span class="u">[U]</span> <strong>Tue 10/13, 10:00–10:30 AM</strong> — Toddler Time (ages 1–3). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Tue 10/13, 10:00–10:30 AM</strong> — Toddler Time (ages 1–3). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Tue 10/13, 10:30–11:15 AM</strong> — Preschool Storytime (ages 3–6). <strong>Rancho Santa Fe (San Diego County Library)</strong> (~14 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Tue 10/13, 10:30–11:00 AM</strong> — Toddler-Preschool Storytime (ages 2–5). <strong>Mission (Oceanside Public Library)</strong> (~13 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Tue 10/13, 10:30–11:15 AM</strong> — Baby Storytime (ages 0–2). <strong>Civic Center (Oceanside Public Library)</strong> (~15 mi). Free. </li>
-<li class="a-u6"><span class="u">[U]</span> <strong>Tue 10/13, 10:30–11:30 AM</strong> — Toddler Tales (walkers–age 3). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Tue 10/13, 10:30–11:30 AM</strong> — Toddler Tales (walkers–age 3). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Tue 10/13, 11:00 AM–12:00 PM</strong> — Stay and Play (children's, open/all ages). <strong>Heritage Park (Irvine Public Library)</strong> (~60 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Tue 10/13, 11:00 AM–12:00 PM</strong> — Stay and Play (children's, open/all ages). <strong>University Park (Irvine Public Library)</strong> (~60 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Tue 10/13, 11:30 AM–12:00 PM</strong> — Bilingual Story Time (ages 2–5). <strong>John Landes (Oceanside Public Library)</strong> (~14 mi). Free. </li>
@@ -722,11 +722,11 @@ details.about ul{margin:.4em 0}
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Tue 10/13, 10:30–11:15 AM</strong> — Preschool Storytime (ages 3–6). <strong>Rancho Santa Fe (San Diego County Library)</strong> (~14 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Tue 10/13, 10:30–11:00 AM</strong> — Toddler-Preschool Storytime (ages 2–5). <strong>Mission (Oceanside Public Library)</strong> (~13 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Tue 10/13, 10:30–11:15 AM</strong> — Baby Storytime (ages 0–2). <strong>Civic Center (Oceanside Public Library)</strong> (~15 mi). Free. </li>
-<li class="a-u6"><span class="u">[U]</span> <strong>Tue 10/13, 10:30–11:30 AM</strong> — Toddler Tales (walkers–age 3). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
-<li class="a-u6"><span class="u">[U]</span> <strong>Tue 10/13, 10:00–10:30 AM</strong> — Toddler Time (ages 1–3). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Tue 10/13, 10:30–11:30 AM</strong> — Toddler Tales (walkers–age 3). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Tue 10/13, 10:00–10:30 AM</strong> — Toddler Time (ages 1–3). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
 </ul><ul class="evd">
-<li class="a-u6"><span class="u">[U]</span> <strong>Tue 10/13, 10:00–10:30 AM</strong> — Toddler Time (ages 1–3). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
-<li class="a-u6"><span class="u">[U]</span> <strong>Tue 10/13, 10:30–11:30 AM</strong> — Toddler Tales (walkers–age 3). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Tue 10/13, 10:00–10:30 AM</strong> — Toddler Time (ages 1–3). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Tue 10/13, 10:30–11:30 AM</strong> — Toddler Tales (walkers–age 3). <strong>Main Library (Escondido Public Library)</strong> (~9 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Tue 10/13, 10:30–11:00 AM</strong> — Toddler-Preschool Storytime (ages 2–5). <strong>Mission (Oceanside Public Library)</strong> (~13 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Tue 10/13, 10:30–11:15 AM</strong> — Preschool Storytime (ages 3–6). <strong>Rancho Santa Fe (San Diego County Library)</strong> (~14 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Tue 10/13, 11:30 AM–12:00 PM</strong> — Bilingual Story Time (ages 2–5). <strong>John Landes (Oceanside Public Library)</strong> (~14 mi). Free. </li>
@@ -743,7 +743,7 @@ details.about ul{margin:.4em 0}
 <li class="a-612"><span class="v">[V]</span> <strong>Tue 10/13, 3:30–4:30 PM</strong> — Tween Time (ages 9–12). <strong>Vista (San Diego County Library)</strong> (~7 mi). Free. </li>
 <li class="a-612"><span class="v">[V]</span> <strong>Tue 10/13, 3:30–4:00 PM</strong> — Homework Help (grades 2–6; registration required). <strong>Katie Wheeler (Irvine Public Library)</strong> (~63 mi). Free. </li>
 <li class="a-612"><span class="v">[V]</span> <strong>Tue 10/13, 3:30–6:00 PM</strong> — SD Nights (ages 10–18; 10–12 portion). <strong>Ramona (San Diego County Library)</strong> (~27 mi). Free. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Tue 10/13, 3:30–4:30 PM</strong> — Tinker Tuesdays STEAM (ages 5–9). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Tue 10/13, 3:30–4:30 PM</strong> — Tinker Tuesdays STEAM (ages 5–9). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Tue 10/13, 4:00–5:00 PM</strong> — ART INSTRUCTION FOR CHILDREN (children). <strong>4S Ranch (San Diego County Library)</strong> (~11 mi). Free. </li>
 <li class="a-612"><span class="v">[V]</span> <strong>Tue 10/13, 4:00–4:30 PM</strong> — Homework Help (grades 2–6; registration required). <strong>Katie Wheeler (Irvine Public Library)</strong> (~63 mi). Free. </li>
 </ul><ul class="evl">
@@ -753,7 +753,7 @@ details.about ul{margin:.4em 0}
 <li class="a-612"><span class="v">[V]</span> <strong>Tue 10/13, 3:30–4:30 PM</strong> — Tween Time (ages 9–12). <strong>Vista (San Diego County Library)</strong> (~7 mi). Free. </li>
 <li class="a-612"><span class="v">[V]</span> <strong>Tue 10/13, 3:30–4:00 PM</strong> — Homework Help (grades 2–6; registration required). <strong>Katie Wheeler (Irvine Public Library)</strong> (~63 mi). Free. </li>
 <li class="a-612"><span class="v">[V]</span> <strong>Tue 10/13, 3:30–6:00 PM</strong> — SD Nights (ages 10–18; 10–12 portion). <strong>Ramona (San Diego County Library)</strong> (~27 mi). Free. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Tue 10/13, 3:30–4:30 PM</strong> — Tinker Tuesdays STEAM (ages 5–9). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Tue 10/13, 3:30–4:30 PM</strong> — Tinker Tuesdays STEAM (ages 5–9). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Tue 10/13, 2:30–3:30 PM</strong> — STEAM Explorers (kids). <strong>Rancho Santa Fe (San Diego County Library)</strong> (~14 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Tue 10/13, 1:00–1:30 PM</strong> — Baby Sign Storytime (babies). <strong>Vista (San Diego County Library)</strong> (~7 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Tue 10/13, 1:00–1:30 PM</strong> — Boogie and Boo! with Hooray Miss Marae (ages 0–5). <strong>San Marcos (San Diego County Library)</strong> (~3 mi). Free. </li>
@@ -763,7 +763,7 @@ details.about ul{margin:.4em 0}
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Tue 10/13, 3:30–5:30 PM</strong> — Knights of the Chess Table (all ages). <strong>San Marcos (San Diego County Library)</strong> (~3 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Tue 10/13, 1:00–1:30 PM</strong> — Baby Sign Storytime (babies). <strong>Vista (San Diego County Library)</strong> (~7 mi). Free. </li>
 <li class="a-612"><span class="v">[V]</span> <strong>Tue 10/13, 3:30–4:30 PM</strong> — Tween Time (ages 9–12). <strong>Vista (San Diego County Library)</strong> (~7 mi). Free. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Tue 10/13, 3:30–4:30 PM</strong> — Tinker Tuesdays STEAM (ages 5–9). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Tue 10/13, 3:30–4:30 PM</strong> — Tinker Tuesdays STEAM (ages 5–9). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Tue 10/13, 4:00–5:00 PM</strong> — ART INSTRUCTION FOR CHILDREN (children). <strong>4S Ranch (San Diego County Library)</strong> (~11 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Tue 10/13, 1:00–1:30 PM</strong> — Bouncing Baby Storytime (pre-walkers). <strong>Poway (San Diego County Library)</strong> (~14 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Tue 10/13, 2:30–3:30 PM</strong> — STEAM Explorers (kids). <strong>Rancho Santa Fe (San Diego County Library)</strong> (~14 mi). Free. </li>
@@ -809,15 +809,15 @@ details.about ul{margin:.4em 0}
 <section class="pane p0kb1d0"><ul class="evt">
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Wed 10/7, 9:30 AM–4:30 PM</strong> — Kids Free October museum day, daily Garden Workshop / Tortoise Talk with Sebastian (all ages). <strong>Children's Museum of Discovery (Escondido)</strong> (~10 mi). Kids 12 &amp; under free with paid adult; adult <strong>$17</strong>. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Wed 10/7, 10:00 AM</strong> — Barnes &amp; Noble Grand Opening — San Marcos (ribbon-cutting with author Kaylie Smith; Cat in the Hat storytimes over opening weekend, times TBA) (family/all ages). <strong>Barnes &amp; Noble, Grand Plaza (San Marcos)</strong> (~5 mi). Free. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Wed 10/7, 10:00 AM–12:00 PM</strong> — SAPLinGS kids program, Hamilton Children's Garden (ages 2–12). <strong>San Diego Botanic Garden (Encinitas)</strong> (~15 mi). Included with admission. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Wed 10/7, 10:00 AM–12:00 PM</strong> — SAPLinGS kids program, Hamilton Children's Garden (ages 2–12). <strong>San Diego Botanic Garden (Encinitas)</strong> (~15 mi). Included with admission. </li>
 </ul><ul class="evl">
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Wed 10/7, 10:00 AM</strong> — Barnes &amp; Noble Grand Opening — San Marcos (ribbon-cutting with author Kaylie Smith; Cat in the Hat storytimes over opening weekend, times TBA) (family/all ages). <strong>Barnes &amp; Noble, Grand Plaza (San Marcos)</strong> (~5 mi). Free. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Wed 10/7, 10:00 AM–12:00 PM</strong> — SAPLinGS kids program, Hamilton Children's Garden (ages 2–12). <strong>San Diego Botanic Garden (Encinitas)</strong> (~15 mi). Included with admission. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Wed 10/7, 10:00 AM–12:00 PM</strong> — SAPLinGS kids program, Hamilton Children's Garden (ages 2–12). <strong>San Diego Botanic Garden (Encinitas)</strong> (~15 mi). Included with admission. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Wed 10/7, 9:30 AM–4:30 PM</strong> — Kids Free October museum day, daily Garden Workshop / Tortoise Talk with Sebastian (all ages). <strong>Children's Museum of Discovery (Escondido)</strong> (~10 mi). Kids 12 &amp; under free with paid adult; adult <strong>$17</strong>. </li>
 </ul><ul class="evd">
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Wed 10/7, 10:00 AM</strong> — Barnes &amp; Noble Grand Opening — San Marcos (ribbon-cutting with author Kaylie Smith; Cat in the Hat storytimes over opening weekend, times TBA) (family/all ages). <strong>Barnes &amp; Noble, Grand Plaza (San Marcos)</strong> (~5 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Wed 10/7, 9:30 AM–4:30 PM</strong> — Kids Free October museum day, daily Garden Workshop / Tortoise Talk with Sebastian (all ages). <strong>Children's Museum of Discovery (Escondido)</strong> (~10 mi). Kids 12 &amp; under free with paid adult; adult <strong>$17</strong>. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Wed 10/7, 10:00 AM–12:00 PM</strong> — SAPLinGS kids program, Hamilton Children's Garden (ages 2–12). <strong>San Diego Botanic Garden (Encinitas)</strong> (~15 mi). Included with admission. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Wed 10/7, 10:00 AM–12:00 PM</strong> — SAPLinGS kids program, Hamilton Children's Garden (ages 2–12). <strong>San Diego Botanic Garden (Encinitas)</strong> (~15 mi). Included with admission. </li>
 </ul></section>
 </div></section>
 <section class="pane p1kday1"><input type="radio" name="ks1d1" id="ks1d1e" checked>
@@ -833,13 +833,13 @@ details.about ul{margin:.4em 0}
 <div class="panes">
 <section class="pane p0kb1d1"><ul class="evt">
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Thu 10/8, 9:30 AM–4:30 PM</strong> — Kids Free October museum day, Garden Workshop / Tortoise Talk (all ages). <strong>Children's Museum of Discovery (Escondido)</strong> (~10 mi). Kids 12 &amp; under free with paid adult; adult <strong>$17</strong>. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Thu 10/8, 10:00 AM–12:00 PM</strong> — SAPLinGS + model trains, Seeds of Wonder (ages 2–12). <strong>San Diego Botanic Garden (Encinitas)</strong> (~15 mi). Included with admission. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Thu 10/8, 10:00 AM–12:00 PM</strong> — SAPLinGS + model trains, Seeds of Wonder (ages 2–12). <strong>San Diego Botanic Garden (Encinitas)</strong> (~15 mi). Included with admission. </li>
 </ul><ul class="evl">
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Thu 10/8, 10:00 AM–12:00 PM</strong> — SAPLinGS + model trains, Seeds of Wonder (ages 2–12). <strong>San Diego Botanic Garden (Encinitas)</strong> (~15 mi). Included with admission. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Thu 10/8, 10:00 AM–12:00 PM</strong> — SAPLinGS + model trains, Seeds of Wonder (ages 2–12). <strong>San Diego Botanic Garden (Encinitas)</strong> (~15 mi). Included with admission. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Thu 10/8, 9:30 AM–4:30 PM</strong> — Kids Free October museum day, Garden Workshop / Tortoise Talk (all ages). <strong>Children's Museum of Discovery (Escondido)</strong> (~10 mi). Kids 12 &amp; under free with paid adult; adult <strong>$17</strong>. </li>
 </ul><ul class="evd">
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Thu 10/8, 9:30 AM–4:30 PM</strong> — Kids Free October museum day, Garden Workshop / Tortoise Talk (all ages). <strong>Children's Museum of Discovery (Escondido)</strong> (~10 mi). Kids 12 &amp; under free with paid adult; adult <strong>$17</strong>. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Thu 10/8, 10:00 AM–12:00 PM</strong> — SAPLinGS + model trains, Seeds of Wonder (ages 2–12). <strong>San Diego Botanic Garden (Encinitas)</strong> (~15 mi). Included with admission. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Thu 10/8, 10:00 AM–12:00 PM</strong> — SAPLinGS + model trains, Seeds of Wonder (ages 2–12). <strong>San Diego Botanic Garden (Encinitas)</strong> (~15 mi). Included with admission. </li>
 </ul></section>
 <section class="pane p1kb1d1"><ul>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Thu 10/8, 5:00–9:00 PM</strong> — Oceanside Sunset Market: children's area, live entertainment, food &amp; craft vendors (family/all ages). <strong>Downtown Oceanside (Oceanside)</strong> (~14 mi). Free. </li>
@@ -855,7 +855,7 @@ details.about ul{margin:.4em 0}
 </div>
 <div class="panes">
 <section class="pane p0kb1d2"><ul class="evt">
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Fri 10/9–Sun 10/11</strong> — Barnes &amp; Noble FREE LEGO Halloween Build: Witch &amp; Broom (designed ages 10+, all ages welcome). <strong>Barnes &amp; Noble (Escondido)</strong> (~9 mi) / <strong>Barnes &amp; Noble (Oceanside)</strong> (~12 mi). Free; registration required — call store to confirm. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Fri 10/9–Sun 10/11</strong> — Barnes &amp; Noble FREE LEGO Halloween Build: Witch &amp; Broom (designed ages 10+, all ages welcome). <strong>Barnes &amp; Noble (Escondido)</strong> (~9 mi) / <strong>Barnes &amp; Noble (Oceanside)</strong> (~12 mi). Free; registration required — call store to confirm. </li>
 <li class="a-612"><span class="v">[V]</span> <strong>Fri 10/9, 9:00 AM–11:00 AM</strong> — Coffee + Connections open house (ages 9+). <strong>San Elijo Lagoon Nature Center (Cardiff)</strong> (~14 mi). Free; registration required. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Fri 10/9, 9:00 AM–6:30 PM</strong> — Bates Nut Farm Pumpkin Patch: late-Friday hours, hayrides, straw maze, pony rides, petting corral (family/all ages). <strong>Bates Nut Farm (Valley Center)</strong> (~20 mi). Activity tickets <strong>paid per ride</strong>. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Fri 10/9, 9:30 AM–4:30 PM</strong> — Kids Free October museum day (all ages). <strong>Children's Museum of Discovery (Escondido)</strong> (~10 mi). Kids free with paid adult; adult <strong>$17</strong>. </li>
@@ -865,9 +865,9 @@ details.about ul{margin:.4em 0}
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Fri 10/9, 9:30 AM–4:30 PM</strong> — Kids Free October museum day (all ages). <strong>Children's Museum of Discovery (Escondido)</strong> (~10 mi). Kids free with paid adult; adult <strong>$17</strong>. </li>
 <li class="a-612"><span class="v">[V]</span> <strong>Fri 10/9, 9:00 AM–11:00 AM</strong> — Coffee + Connections open house (ages 9+). <strong>San Elijo Lagoon Nature Center (Cardiff)</strong> (~14 mi). Free; registration required. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Fri 10/9, 9:00 AM–6:30 PM</strong> — Bates Nut Farm Pumpkin Patch: late-Friday hours, hayrides, straw maze, pony rides, petting corral (family/all ages). <strong>Bates Nut Farm (Valley Center)</strong> (~20 mi). Activity tickets <strong>paid per ride</strong>. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Fri 10/9–Sun 10/11</strong> — Barnes &amp; Noble FREE LEGO Halloween Build: Witch &amp; Broom (designed ages 10+, all ages welcome). <strong>Barnes &amp; Noble (Escondido)</strong> (~9 mi) / <strong>Barnes &amp; Noble (Oceanside)</strong> (~12 mi). Free; registration required — call store to confirm. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Fri 10/9–Sun 10/11</strong> — Barnes &amp; Noble FREE LEGO Halloween Build: Witch &amp; Broom (designed ages 10+, all ages welcome). <strong>Barnes &amp; Noble (Escondido)</strong> (~9 mi) / <strong>Barnes &amp; Noble (Oceanside)</strong> (~12 mi). Free; registration required — call store to confirm. </li>
 </ul><ul class="evd">
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Fri 10/9–Sun 10/11</strong> — Barnes &amp; Noble FREE LEGO Halloween Build: Witch &amp; Broom (designed ages 10+, all ages welcome). <strong>Barnes &amp; Noble (Escondido)</strong> (~9 mi) / <strong>Barnes &amp; Noble (Oceanside)</strong> (~12 mi). Free; registration required — call store to confirm. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Fri 10/9–Sun 10/11</strong> — Barnes &amp; Noble FREE LEGO Halloween Build: Witch &amp; Broom (designed ages 10+, all ages welcome). <strong>Barnes &amp; Noble (Escondido)</strong> (~9 mi) / <strong>Barnes &amp; Noble (Oceanside)</strong> (~12 mi). Free; registration required — call store to confirm. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Fri 10/9, 9:30 AM–4:30 PM</strong> — Kids Free October museum day (all ages). <strong>Children's Museum of Discovery (Escondido)</strong> (~10 mi). Kids free with paid adult; adult <strong>$17</strong>. </li>
 <li class="a-612"><span class="v">[V]</span> <strong>Fri 10/9, 9:00 AM–11:00 AM</strong> — Coffee + Connections open house (ages 9+). <strong>San Elijo Lagoon Nature Center (Cardiff)</strong> (~14 mi). Free; registration required. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Fri 10/9, 9:00 AM–6:30 PM</strong> — Bates Nut Farm Pumpkin Patch: late-Friday hours, hayrides, straw maze, pony rides, petting corral (family/all ages). <strong>Bates Nut Farm (Valley Center)</strong> (~20 mi). Activity tickets <strong>paid per ride</strong>. </li>
@@ -886,7 +886,7 @@ details.about ul{margin:.4em 0}
 </div>
 <div class="panes">
 <section class="pane p0kb1d3"><ul class="evt">
-<li class="a-u6"><span class="u">[U]</span> <strong>Sat 10/10, time TBA</strong> — Cat in the Hat storytimes, B&amp;N San Marcos opening weekend (young kids). <strong>Barnes &amp; Noble, Grand Plaza (San Marcos)</strong> (~5 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Sat 10/10, time TBA</strong> — Cat in the Hat storytimes, B&amp;N San Marcos opening weekend (young kids). <strong>Barnes &amp; Noble, Grand Plaza (San Marcos)</strong> (~5 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sat 10/10, 8:30 AM–6:00 PM</strong> — Bates Nut Farm Pumpkin Patch + Scarecrow Contest (family/all ages). <strong>Bates Nut Farm (Valley Center)</strong> (~20 mi). Activity tickets <strong>paid per ride</strong>. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sat 10/10, 9:30 AM–4:30 PM</strong> — Kids Free October museum day (all ages). <strong>Children's Museum of Discovery (Escondido)</strong> (~10 mi). Kids free with paid adult; adult <strong>$17</strong>. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sat 10/10, 10:00 AM–3:00 PM</strong> — Alta Vista Botanical Gardens Fall Fun Festival: scarecrow contest, kids' crafts &amp; pumpkin decorating, plant sale, music (family/all ages). <strong>Alta Vista Botanical Gardens (Vista)</strong> (~7 mi). Free. </li>
@@ -908,9 +908,9 @@ details.about ul{margin:.4em 0}
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sat 10/10, 10:00 AM–4:00 PM</strong> — Fall Festival at Mellano Farm Stand: pumpkin patch, corn maze, tractor rides (family/all ages). <strong>Mellano Farm Stand (Oceanside)</strong> (~13 mi). Free patch admission; parking <strong>$5</strong>. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sat 10/10, 9:30 AM–4:30 PM</strong> — Kids Free October museum day (all ages). <strong>Children's Museum of Discovery (Escondido)</strong> (~10 mi). Kids free with paid adult; adult <strong>$17</strong>. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sat 10/10, 8:30 AM–6:00 PM</strong> — Bates Nut Farm Pumpkin Patch + Scarecrow Contest (family/all ages). <strong>Bates Nut Farm (Valley Center)</strong> (~20 mi). Activity tickets <strong>paid per ride</strong>. </li>
-<li class="a-u6"><span class="u">[U]</span> <strong>Sat 10/10, time TBA</strong> — Cat in the Hat storytimes, B&amp;N San Marcos opening weekend (young kids). <strong>Barnes &amp; Noble, Grand Plaza (San Marcos)</strong> (~5 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Sat 10/10, time TBA</strong> — Cat in the Hat storytimes, B&amp;N San Marcos opening weekend (young kids). <strong>Barnes &amp; Noble, Grand Plaza (San Marcos)</strong> (~5 mi). Free. </li>
 </ul><ul class="evd">
-<li class="a-u6"><span class="u">[U]</span> <strong>Sat 10/10, time TBA</strong> — Cat in the Hat storytimes, B&amp;N San Marcos opening weekend (young kids). <strong>Barnes &amp; Noble, Grand Plaza (San Marcos)</strong> (~5 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Sat 10/10, time TBA</strong> — Cat in the Hat storytimes, B&amp;N San Marcos opening weekend (young kids). <strong>Barnes &amp; Noble, Grand Plaza (San Marcos)</strong> (~5 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sat 10/10, 10:00 AM–3:00 PM</strong> — Alta Vista Botanical Gardens Fall Fun Festival: scarecrow contest, kids' crafts &amp; pumpkin decorating, plant sale, music (family/all ages). <strong>Alta Vista Botanical Gardens (Vista)</strong> (~7 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sat 10/10, 9:30 AM–4:30 PM</strong> — Kids Free October museum day (all ages). <strong>Children's Museum of Discovery (Escondido)</strong> (~10 mi). Kids free with paid adult; adult <strong>$17</strong>. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sat 10/10, 10:00 AM–5:00 PM</strong> — Farm Stand West 36th Annual Fall Festival: hayrides, pumpkin patch, vendors (family/all ages). <strong>The Farm Stand West (Escondido)</strong> (~10 mi). Free admission/parking. </li>
@@ -938,7 +938,7 @@ details.about ul{margin:.4em 0}
 </div>
 <div class="panes">
 <section class="pane p0kb1d4"><ul class="evt">
-<li class="a-u6"><span class="u">[U]</span> <strong>Sun 10/11, time TBA</strong> — Cat in the Hat storytimes, B&amp;N San Marcos opening weekend (young kids). <strong>Barnes &amp; Noble, Grand Plaza (San Marcos)</strong> (~5 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Sun 10/11, time TBA</strong> — Cat in the Hat storytimes, B&amp;N San Marcos opening weekend (young kids). <strong>Barnes &amp; Noble, Grand Plaza (San Marcos)</strong> (~5 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Sun 10/11, 8:00–9:30 AM</strong> — Baby Steps "Costume Day" (18 months &amp; under only). <strong>Pretend City Children's Museum (Irvine)</strong> (~62 mi). <strong>$12/adult</strong>, babies free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sun 10/11, 9:00 AM–5:00 PM</strong> — San Marcos Harvest Fest (kids' inflatables &amp; carnival rides; scarecrow-making contest for kids — first 50 sign-ups, arrive early; 200+ vendor booths, food, live music on three stages) (family/all ages). <strong>North City, 251 N City Dr (San Marcos)</strong> (~4 mi). Free entry; free parking nearby. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sun 10/11, 9:00 AM–10:30 AM</strong> — Free Interpretive Nature Walk, 2nd Sunday (all ages). <strong>Elfin Forest Recreational Reserve (Escondido)</strong> (~8 mi). Free. </li>
@@ -960,10 +960,10 @@ details.about ul{margin:.4em 0}
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sun 10/11, 9:00 AM–5:00 PM</strong> — San Marcos Harvest Fest (kids' inflatables &amp; carnival rides; scarecrow-making contest for kids — first 50 sign-ups, arrive early; 200+ vendor booths, food, live music on three stages) (family/all ages). <strong>North City, 251 N City Dr (San Marcos)</strong> (~4 mi). Free entry; free parking nearby. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sun 10/11, 9:00 AM–10:30 AM</strong> — Free Interpretive Nature Walk, 2nd Sunday (all ages). <strong>Elfin Forest Recreational Reserve (Escondido)</strong> (~8 mi). Free. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Sun 10/11, 8:00–9:30 AM</strong> — Baby Steps "Costume Day" (18 months &amp; under only). <strong>Pretend City Children's Museum (Irvine)</strong> (~62 mi). <strong>$12/adult</strong>, babies free. </li>
-<li class="a-u6"><span class="u">[U]</span> <strong>Sun 10/11, time TBA</strong> — Cat in the Hat storytimes, B&amp;N San Marcos opening weekend (young kids). <strong>Barnes &amp; Noble, Grand Plaza (San Marcos)</strong> (~5 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Sun 10/11, time TBA</strong> — Cat in the Hat storytimes, B&amp;N San Marcos opening weekend (young kids). <strong>Barnes &amp; Noble, Grand Plaza (San Marcos)</strong> (~5 mi). Free. </li>
 </ul><ul class="evd">
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sun 10/11, 9:00 AM–5:00 PM</strong> — San Marcos Harvest Fest (kids' inflatables &amp; carnival rides; scarecrow-making contest for kids — first 50 sign-ups, arrive early; 200+ vendor booths, food, live music on three stages) (family/all ages). <strong>North City, 251 N City Dr (San Marcos)</strong> (~4 mi). Free entry; free parking nearby. </li>
-<li class="a-u6"><span class="u">[U]</span> <strong>Sun 10/11, time TBA</strong> — Cat in the Hat storytimes, B&amp;N San Marcos opening weekend (young kids). <strong>Barnes &amp; Noble, Grand Plaza (San Marcos)</strong> (~5 mi). Free. </li>
+<li class="a-u6"><span class="u">UNVERIFIED</span> <strong>Sun 10/11, time TBA</strong> — Cat in the Hat storytimes, B&amp;N San Marcos opening weekend (young kids). <strong>Barnes &amp; Noble, Grand Plaza (San Marcos)</strong> (~5 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sun 10/11, 11:00 AM–5:00 PM</strong> — Vista's Inaugural Día de Muertos Festival: altars, sugar-skull decorating, Children's Zone, Catrina contest (family/all ages). <strong>S Santa Fe Ave (Vista)</strong> (~7 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sun 10/11, 9:00 AM–10:30 AM</strong> — Free Interpretive Nature Walk, 2nd Sunday (all ages). <strong>Elfin Forest Recreational Reserve (Escondido)</strong> (~8 mi). Free. </li>
 <li class="a-u6 a-612"><span class="v">[V]</span> <strong>Sun 10/11, 10:00 AM–5:00 PM</strong> — Farm Stand West Fall Festival, day 2 (family/all ages). <strong>The Farm Stand West (Escondido)</strong> (~10 mi). Free admission/parking. </li>
@@ -988,13 +988,13 @@ details.about ul{margin:.4em 0}
 </div>
 <div class="panes">
 <section class="pane p0kb1d5"><ul class="evt">
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Mon 10/12, full day</strong> — Code Ninjas Teacher Service Day Camp (ages 5–14; 5–12 portion). <strong>Code Ninjas North County (San Marcos area)</strong> (~10 mi). Cost not stated. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Mon 10/12, full day</strong> — Code Ninjas Teacher Service Day Camp (ages 5–14; 5–12 portion). <strong>Code Ninjas North County (San Marcos area)</strong> (~10 mi). Cost not stated. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Mon 10/12, 9:00 AM–10:30 AM</strong> — Toddler Town, toddler-only opening (19 months–3 years; registration required). <strong>Pretend City Children's Museum (Irvine)</strong> (~62 mi). <strong>Paid / registration</strong>. </li>
 </ul><ul class="evl">
 <li class="a-u6"><span class="v">[V]</span> <strong>Mon 10/12, 9:00 AM–10:30 AM</strong> — Toddler Town, toddler-only opening (19 months–3 years; registration required). <strong>Pretend City Children's Museum (Irvine)</strong> (~62 mi). <strong>Paid / registration</strong>. </li>
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Mon 10/12, full day</strong> — Code Ninjas Teacher Service Day Camp (ages 5–14; 5–12 portion). <strong>Code Ninjas North County (San Marcos area)</strong> (~10 mi). Cost not stated. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Mon 10/12, full day</strong> — Code Ninjas Teacher Service Day Camp (ages 5–14; 5–12 portion). <strong>Code Ninjas North County (San Marcos area)</strong> (~10 mi). Cost not stated. </li>
 </ul><ul class="evd">
-<li class="a-u6 a-612"><span class="u">[U]</span> <strong>Mon 10/12, full day</strong> — Code Ninjas Teacher Service Day Camp (ages 5–14; 5–12 portion). <strong>Code Ninjas North County (San Marcos area)</strong> (~10 mi). Cost not stated. </li>
+<li class="a-u6 a-612"><span class="u">UNVERIFIED</span> <strong>Mon 10/12, full day</strong> — Code Ninjas Teacher Service Day Camp (ages 5–14; 5–12 portion). <strong>Code Ninjas North County (San Marcos area)</strong> (~10 mi). Cost not stated. </li>
 <li class="a-u6"><span class="v">[V]</span> <strong>Mon 10/12, 9:00 AM–10:30 AM</strong> — Toddler Town, toddler-only opening (19 months–3 years; registration required). <strong>Pretend City Children's Museum (Irvine)</strong> (~62 mi). <strong>Paid / registration</strong>. </li>
 </ul></section>
 </div></section>
@@ -1087,12 +1087,12 @@ details.about ul{margin:.4em 0}
 <li><strong>Irvine libraries are no longer OCPL:</strong> Irvine withdrew from the county system July 1, 2025; all three branches are the city-run Irvine Public Library (calendar: irvinepubliclibrary.libcal.com).</li>
 </ul></section>
 <section class="pane p1kages3"><ul>
-<li><strong>Carlsbad City Library (Dove, Cole, Learning Center):</strong> the city events calendar 403s text fetch and the children's calendar PDFs are stale (Aug–Sep) — all Carlsbad entries are <span class="u">[U]</span> from the published weekly program grid.</li>
-<li><strong>Escondido Public Library (Main Library):</strong> the month calendar text-fetch returned no dated detail this run — all entries are <span class="u">[U]</span> from recurring weekly programs (Little Explorers, Knights Realm Chess, Toddler Tales, Baby Lapsit, Read to a Dragon).</li>
+<li><strong>Carlsbad City Library (Dove, Cole, Learning Center):</strong> the city events calendar 403s text fetch and the children's calendar PDFs are stale (Aug–Sep) — all Carlsbad entries are <span class="u">UNVERIFIED</span> from the published weekly program grid.</li>
+<li><strong>Escondido Public Library (Main Library):</strong> the month calendar text-fetch returned no dated detail this run — all entries are <span class="u">UNVERIFIED</span> from recurring weekly programs (Little Explorers, Knights Realm Chess, Toddler Tales, Baby Lapsit, Read to a Dragon).</li>
 <li><strong>SDCL:</strong> all 62 in-window kids events are <span class="v">[V]</span> from live sdcl.bibliocommons.com listings; Encinitas has only one in-window event (Signing Storytime Mon 10/12). No SDCL kids events on Sun 10/11 at any North County branch.</li>
 <li><strong>Irvine Public Library:</strong> verified live via browser task on irvinepubliclibrary.libcal.com for Oct 7–13 (Stay and Play daily, Japanese/Spanish storytimes, Family Craft/Storytime, Sunday Singalong, Goosebumps, Chess Afternoons, Homework Help) — all Irvine library entries above are <span class="v">[V]</span>.</li>
 <li><strong>City of Irvine parks &amp; rec (yourirvine.org):</strong> JS-blocked via text fetch; the Irvine Global Village Festival (Sat 10/10) was verified via the City of Irvine news release. No other dated Irvine city kids events were verified in-window.</li>
-<li><strong>Barnes &amp; Noble:</strong> the store event finder is JS-driven — San Marcos Cat in the Hat weekend storytime times are <span class="u">[U]</span>/TBA; call the Grand Plaza store to confirm.</li>
+<li><strong>Barnes &amp; Noble:</strong> the store event finder is JS-driven — San Marcos Cat in the Hat weekend storytime times are <span class="u">UNVERIFIED</span>/TBA; call the Grand Plaza store to confirm.</li>
 <li><strong>No dated in-window kids events found at:</strong> YMCA of San Diego County and Boys &amp; Girls Clubs of North County public calendars (YMCA Halloween programming lands Oct 17/23 — see Beyond), Buena Vista Audubon Nature Center (no Oct 7–13 kids-specific event verified; nature center open daily is not listed as a dated event this run). San Elijo Lagoon Wildlife Tour Sat 10/10 is ages 15+ and was excluded as out of scope.</li>
 </ul></section>
 <section class="pane p2kages3"><ul>
