@@ -77,13 +77,14 @@ input[name="kage"],input[name^="kday"],input[name^="kb"],input[name^="ks"],input
 #ks0d4n:checked ~ .panes ul.evt{display:none}
 #ks0d4n:checked ~ .panes ul.evd{display:block}
 #kday0d4:checked ~ .panes .p4kday0{display:block}
-#kb0d50:checked ~ .panes .p0kb0d5{display:block}
-#kb0d51:checked ~ .panes .p1kb0d5{display:block}
-#ks0d5l:checked ~ .panes ul.evt{display:none}
-#ks0d5l:checked ~ .panes ul.evl{display:block}
-#ks0d5n:checked ~ .panes ul.evt{display:none}
-#ks0d5n:checked ~ .panes ul.evd{display:block}
 #kday0d5:checked ~ .panes .p5kday0{display:block}
+#kb0d60:checked ~ .panes .p0kb0d6{display:block}
+#kb0d61:checked ~ .panes .p1kb0d6{display:block}
+#ks0d6l:checked ~ .panes ul.evt{display:none}
+#ks0d6l:checked ~ .panes ul.evl{display:block}
+#ks0d6n:checked ~ .panes ul.evt{display:none}
+#ks0d6n:checked ~ .panes ul.evd{display:block}
+#kday0d6:checked ~ .panes .p6kday0{display:block}
 #kaf0u:checked ~ .panes li:not(.a-u6){display:none}
 #kaf06:checked ~ .panes li:not(.a-612){display:none}
 #kb1d00:checked ~ .panes .p0kb1d0{display:block}
@@ -204,12 +205,13 @@ input[name="kage"],input[name^="kday"],input[name^="kb"],input[name^="ks"],input
 #ks0d4l:checked ~ .sortrow label[for="ks0d4l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #ks0d4n:checked ~ .sortrow label[for="ks0d4n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kday0d4:checked ~ .subbar label[for="kday0d4"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#kb0d50:checked ~ .subbar label[for="kb0d50"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#kb0d51:checked ~ .subbar label[for="kb0d51"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks0d5e:checked ~ .sortrow label[for="ks0d5e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks0d5l:checked ~ .sortrow label[for="ks0d5l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
-#ks0d5n:checked ~ .sortrow label[for="ks0d5n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kday0d5:checked ~ .subbar label[for="kday0d5"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#kb0d60:checked ~ .subbar label[for="kb0d60"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#kb0d61:checked ~ .subbar label[for="kb0d61"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks0d6e:checked ~ .sortrow label[for="ks0d6e"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks0d6l:checked ~ .sortrow label[for="ks0d6l"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#ks0d6n:checked ~ .sortrow label[for="ks0d6n"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
+#kday0d6:checked ~ .subbar label[for="kday0d6"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kaf0a:checked ~ .afilter label[for="kaf0a"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kaf0u:checked ~ .afilter label[for="kaf0u"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
 #kaf06:checked ~ .afilter label[for="kaf06"]{background:var(--tab-active-bg);color:var(--tab-active-fg);border-color:var(--tab-active-bg)}
@@ -322,13 +324,15 @@ details.about ul{margin:.4em 0}
 <input type="radio" name="kday0" id="kday0d3">
 <input type="radio" name="kday0" id="kday0d4">
 <input type="radio" name="kday0" id="kday0d5">
+<input type="radio" name="kday0" id="kday0d6">
 <div class="subbar">
 <label class="tlab" for="kday0d0">Fri 11/6</label>
 <label class="tlab" for="kday0d1">Sat 11/7</label>
 <label class="tlab" for="kday0d2">Sun 11/8</label>
 <label class="tlab" for="kday0d3">Mon 11/9</label>
 <label class="tlab" for="kday0d4">Tue 11/10</label>
-<label class="tlab" for="kday0d5">Thu 11/12</label>
+<label class="tlab" for="kday0d5">Wed 11/11</label>
+<label class="tlab" for="kday0d6">Thu 11/12</label>
 </div>
 <div class="panes">
 <section class="pane p0kday0"><input type="radio" name="ks0d0" id="ks0d0e" checked>
@@ -691,18 +695,19 @@ details.about ul{margin:.4em 0}
 <li class="a-612"><a class="v" href="https://irvinepubliclibrary.libcal.com/event/17486535" target="_blank" rel="noopener">V</a> <strong>Tue 11/10, 4:00 PM–4:30 PM</strong> — Homework Help (Children's). <strong>Katie Wheeler Library (Irvine Public Library)</strong> (~60 mi). Free.  </li>
 </ul></section>
 </div></section>
-<section class="pane p5kday0"><input type="radio" name="ks0d5" id="ks0d5e" checked>
-<input type="radio" name="ks0d5" id="ks0d5l">
-<input type="radio" name="ks0d5" id="ks0d5n">
-<input type="radio" name="kb0d5" id="kb0d50" checked>
-<input type="radio" name="kb0d5" id="kb0d51">
-<div class="sortrow"><label class="tlab slab" for="ks0d5e">Earliest</label><label class="tlab slab" for="ks0d5l">Latest</label><label class="tlab slab" for="ks0d5n">Nearest</label></div>
+<section class="pane p5kday0"><p>All libraries are closed today for Veterans Day — no library events. See Notes for details.</p></section>
+<section class="pane p6kday0"><input type="radio" name="ks0d6" id="ks0d6e" checked>
+<input type="radio" name="ks0d6" id="ks0d6l">
+<input type="radio" name="ks0d6" id="ks0d6n">
+<input type="radio" name="kb0d6" id="kb0d60" checked>
+<input type="radio" name="kb0d6" id="kb0d61">
+<div class="sortrow"><label class="tlab slab" for="ks0d6e">Earliest</label><label class="tlab slab" for="ks0d6l">Latest</label><label class="tlab slab" for="ks0d6n">Nearest</label></div>
 <div class="subbar">
-<label class="tlab" for="kb0d50">Morning</label>
-<label class="tlab" for="kb0d51">Afternoon</label>
+<label class="tlab" for="kb0d60">Morning</label>
+<label class="tlab" for="kb0d61">Afternoon</label>
 </div>
 <div class="panes">
-<section class="pane p0kb0d5"><ul class="evt">
+<section class="pane p0kb0d6"><ul class="evt">
 <li class="a-u6"><a class="v" href="https://library.carlsbadca.gov/Home/Components/Calendar/Event/21895/17770" target="_blank" rel="noopener">V</a> <strong>Thu 11/12, 10:00 AM</strong> — Baby Lapsit (prewalkers). <strong>Dove (Carlsbad City Library)</strong> (~9 mi). Free.  </li>
 <li class="a-u6"><a class="v" href="https://sandiego.events.mylibrary.digital/event?id=316161" target="_blank" rel="noopener">V</a> <strong>Thu 11/12, 10:00 AM</strong> — Tiny Tot Storytime (Babies/Toddlers). <strong>Carmel Valley Library (San Diego Public Library)</strong> (~15 mi). Free.  </li>
 <li class="a-u6"><a class="v" href="https://irvinepubliclibrary.libcal.com/event/17736645" target="_blank" rel="noopener">V</a> <strong>Thu 11/12, 10:30 AM–11:00 AM</strong> — Toddler Storytime (Children's). <strong>Heritage Park Library (Irvine Public Library)</strong> (~60 mi). Free.  </li>
@@ -760,7 +765,7 @@ details.about ul{margin:.4em 0}
 <li class="a-u6"><a class="v" href="https://irvinepubliclibrary.libcal.com/event/17224843" target="_blank" rel="noopener">V</a> <strong>Thu 11/12, 11:00 AM–11:30 AM</strong> — Japanese Storytime (Children's). <strong>University Park Library (Irvine Public Library)</strong> (~60 mi). Free.  </li>
 <li class="a-u6"><a class="v" href="https://irvinepubliclibrary.libcal.com/event/17736654" target="_blank" rel="noopener">V</a> <strong>Thu 11/12, 11:30 AM–12:00 PM</strong> — Toddler Storytime (Children's). <strong>Heritage Park Library (Irvine Public Library)</strong> (~60 mi). Free.  </li>
 </ul></section>
-<section class="pane p1kb0d5"><ul class="evt">
+<section class="pane p1kb0d6"><ul class="evt">
 <li class="a-612"><a class="v" href="https://sdcl.bibliocommons.com/events/6a8f3db201168509603835c0" target="_blank" rel="noopener">V</a> <strong>Thu 11/12, 1:00 PM–2:00 PM</strong> — Crafternoon (Afterschool, Crafts &amp; DIY, Kids, English). <strong>Poway (San Diego County Library)</strong> (~16 mi). Free.  </li>
 <li class="a-612"><a class="v" href="https://sdcl.bibliocommons.com/events/6a5577eb4523092f002fd5b5" target="_blank" rel="noopener">V</a> <strong>Thu 11/12, 2:30 PM–3:30 PM</strong> — Color, Cut &amp; Create: Kids' Art Buffet (Afterschool, Kids, English). <strong>Rancho Santa Fe (San Diego County Library)</strong> (~10 mi). Free.  </li>
 <li class="a-612"><a class="v" href="https://sdcl.bibliocommons.com/events/6a61551f7d824676437cdac7" target="_blank" rel="noopener">V</a> <strong>Thu 11/12, 2:45 PM–3:45 PM</strong> — Switch Thursday (Afterschool, Gaming, Teens, English). <strong>Solana Beach (San Diego County Library)</strong> (~17 mi). Free.  </li>
